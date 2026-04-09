@@ -1,0 +1,2305 @@
+[
+  {
+    "material": "ABS",
+    "name": "0.9KG ABS | Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-ABS-BK-0.9KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "0.9KG ABS | White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-ABS-WT-0.9KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "1KG ABS | Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-ABS-BK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "1KG ABS | Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-ABS-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "1KG ABS | Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-ABS-GY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "1KG ABS | Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-ABS-RD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "1KG ABS | White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-ABS-WT-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "ABS / Black 1KG*10Rolls",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-EU-SL-ABS-BK-1KG*10-PS",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "ABS / Random Color 1KG*10Rolls (Maybe Repeated)",
+    "hex": "#4076B0",
+    "sku": "DLZ-EU-SL-ABS-Random-1KG*10-PS",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-EU-SL-ABS-BK-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-EABS-GY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "Mint Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-EABS-MG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "Natural(White)",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-EABS-NT-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ABS",
+    "name": "TPU / Black 1KG*10Rolls",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-EU-SL-TPU-BK-1KG*10-PS",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Anti-string PLA",
+    "name": "Anti-string PLA / Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-APLA-BK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Anti-string PLA",
+    "name": "Anti-string PLA / Cream White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-APLA-CW-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Anti-string PLA",
+    "name": "Anti-string PLA / Dark Green(Oliver Green)",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-APLA-DG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Anti-string PLA",
+    "name": "Anti-string PLA / Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-APLA-GY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Anti-string PLA",
+    "name": "Anti-string PLA / Light Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-APLA-LB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ASA",
+    "name": "Black 0.9KG",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-ASA-BK-0.9KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ASA",
+    "name": "Black 1KG",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-ASA-BK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "ASA",
+    "name": "White(Natural) 1KG",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-ASA-WT-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Glow PLA",
+    "name": "Blue Filament (Glow Blue)",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PLANT-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Glow PLA",
+    "name": "Future Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PLANT-FGN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Glow PLA",
+    "name": "Red Filament (Glow Orange)",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-PLANT-RD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Glow PLA",
+    "name": "White Filament (Glow Blue)",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PLANT-WTB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Glow PLA",
+    "name": "White Filament (Glow Green)",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PLANT-WTG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Glow PLA",
+    "name": "Yellow Filament (Glow Yellow)",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-PLANT-YL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed Matte PLA | Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-HSPLAYG-BK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed Matte PLA | Cherry Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-HSPLAYG-CR-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed Matte PLA | Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-HSPLAYG-GY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed Matte PLA | Oliver Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-HSPLAYG-OG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed Matte PLA | Pink(Sakura Pink)",
+    "hex": "#EC407A",
+    "sku": "DLZ-US-SL-HSPLAYG-SP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed Matte PLA | Sky Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-HSPLAYG-SB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed Matte PLA | Sunny Orange",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-HSPLAYG-SO-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed Matte PLA | White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-HSPLAYG-WT-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-HSPLA-BK-3KGSPOOL",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / Blue(Klein Blue)",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-HSPLA-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / Coral Pink",
+    "hex": "#EC407A",
+    "sku": "DLZ-US-SL-HSPLA-CP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-HSPLA-GN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-HSPLA-GY-3KGSPOOL",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / Jelly Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-HSPLA-JG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / Mocha Mousse",
+    "hex": "#795548",
+    "sku": "DLZ-US-SL-HSPLA-MM-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / Olive Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-HSPLA-OG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / Orange",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-HSPLA-OR-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / Pink",
+    "hex": "#EC407A",
+    "sku": "DLZ-US-SL-HSPLA-PK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-HSPLA-RD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-HSPLA-WT-3KGSPOOL",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA / Yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-HSPLA-YL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-HSPLA-BK-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-HSPLA-GY-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "High Speed PLA",
+    "name": "High Speed PLA White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-HSPLA-WT-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "| ABS Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-ABS-BK-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "| ABS White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-ABS-WT-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "| PETG Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-PETG-BK-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "| PETG Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-PETG-GY-3KGSPOOL",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "| PETG White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PETG-WT-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-PLA-BK-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Black 1KG*10Rolls",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-EU-SL-PLA-BK-1KG*10-PS",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Blue Filament (Glow Blue)",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PETGNOC-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Gold",
+    "hex": "#FFC107",
+    "sku": "DLZ-US-SL-PLA-GD-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Green Filament (Glow Green)",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PETGNOC-GN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-HSPLA-GY-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "HSPLA Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-HSPLA-BK-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "HSPLA Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-HSPLA-GY-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "HSPLA White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-HSPLA-WT-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Klein Blue(Blue)",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PLA-KB-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Oliver Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PLA+-OG-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Beige(Skin)",
+    "hex": "#D7CCC8",
+    "sku": "DLZ-US-SL-PETG-SK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-PETG-BK-3KGSPOOL",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Blue (Klein Blue)",
+    "hex": "#1565C0",
+    "sku": "DLZ-CA-SL-PETG-KB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Blue(Klein Blue)",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PETG-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Bone White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PETG-BWT-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Carbon Fiber | Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-PETGCF-BK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Ceramic White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PETG-CW-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Cherry Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-PETG-CR-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Chocolate",
+    "hex": "#4E342E",
+    "sku": "DLZ-US-SL-PETG-CC-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Clear(Transparent)",
+    "hex": "#ECEFF1",
+    "sku": "DLZ-US-SL-PETG-TP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Coffee",
+    "hex": "#3F9D60",
+    "sku": "DLZ-EU-SL-PETG-CO-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Coffee Brown",
+    "hex": "#5D4037",
+    "sku": "DLZ-US-SL-PETG-CBN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Cyan",
+    "hex": "#B14892",
+    "sku": "DLZ-US-SL-PETG-CY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PETG-GN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-PETG-GY-3KGSPOOL",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Lavender Purple(Purple)",
+    "hex": "#6A1B9A",
+    "sku": "DLZ-US-SL-PETG-LP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Lemon Yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-PETG-LY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Magenta",
+    "hex": "#92852F",
+    "sku": "DLZ-US-SL-PETG-MAG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Midnigh",
+    "hex": "#BC2F3B",
+    "sku": "DLZ-US-SL-PETG-MN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Mint Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PETG-MG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Oak(Wood)",
+    "hex": "#8D6E63",
+    "sku": "DLZ-US-SL-PETG-OK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Olive Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-CA-SL-PETG-OG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Oliver Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PETG-OG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Orange",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-PETG-OR-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-PETG-RD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Roasted Chestnut",
+    "hex": "#6D4C41",
+    "sku": "DLZ-US-SL-PETG-RCN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Sakura Pink",
+    "hex": "#EC407A",
+    "sku": "DLZ-US-SL-PETG-SP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Sky Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PETG-SB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Sunny Orange",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-PETG-SO-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Transparent",
+    "hex": "#ECEFF1",
+    "sku": "DLZ-CA-SL-PETG-TP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Transparent Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PETG-TPBL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Transparent Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PETG-TPGN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Transparent Orange",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-PETG-TPOR-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Transparent Purple",
+    "hex": "#6A1B9A",
+    "sku": "DLZ-US-SL-PETG-TPPP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Transparent Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-PETG-TPRD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Transparent Yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-PETG-TPYL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Vivid yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-PETG-VY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PETG-WT-3KGSPOOL",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PETG Yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-PETG-YL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PLA Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-PLA-BK-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PLA Blue(Klein Blue)",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PLA-KB-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PLA Gold",
+    "hex": "#FFC107",
+    "sku": "DLZ-US-SL-PLA-GD-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PLA Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-PLA-GY-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PLA Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-PLA-RD-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PLA Silver",
+    "hex": "#B0BEC5",
+    "sku": "DLZ-US-SL-PLA-SV-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "PLA White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PLA-WT-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Rainbow-01",
+    "hex": "#AB47BC",
+    "sku": "DLZ-EU-SL-PETG-RB01-16M-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Random Color 1KG*10Rolls (Maybe Repeated)",
+    "hex": "#367BB0",
+    "sku": "DLZ-EU-SL-PLA-Random-1KG*10-PS",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-PLA-RD-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Red Filament (Glow Red)",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-PETGNOC-RD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Silver",
+    "hex": "#B0BEC5",
+    "sku": "DLZ-US-SL-PLA-SV-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Transparent(Clear)",
+    "hex": "#ECEFF1",
+    "sku": "DLZ-US-SL-PLA-TP-3KGSPOOL",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-HSPLA-WT-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "White Filament (Glow Blue)",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PETGNOC-WTB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "White Filament (Glow Green)",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PETGNOC-WTG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG",
+    "name": "Yellow Filament (Glow Yellow)",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-PETGNOC-YL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG HS Matte",
+    "name": "High Speed Matte PETG | Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-HSMPETG-BK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG HS Matte",
+    "name": "High Speed Matte PETG | Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-HSMPETG-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG HS Matte",
+    "name": "High Speed Matte PETG | Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-HSMPETG-GN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG HS Matte",
+    "name": "High Speed Matte PETG | Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-HSMPETG-GY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG HS Matte",
+    "name": "High Speed Matte PETG | Mint Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-HSMPETG-MG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG HS Matte",
+    "name": "High Speed Matte PETG | Orange",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-HSMPETG-OR-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG HS Matte",
+    "name": "High Speed Matte PETG | Pink",
+    "hex": "#EC407A",
+    "sku": "DLZ-US-SL-HSMPETG-PK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG HS Matte",
+    "name": "High Speed Matte PETG | Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-HSMPETG-RD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG HS Matte",
+    "name": "High Speed Matte PETG | Sky Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-HSMPETG-SB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG HS Matte",
+    "name": "High Speed Matte PETG | White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-HSMPETG-WT-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PETG HS Matte",
+    "name": "High Speed Matte PETG | Yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-HSMPETG-YL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA",
+    "name": "Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-PLA-BK-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA",
+    "name": "Gold",
+    "hex": "#FFC107",
+    "sku": "DLZ-US-SL-PLA-GD-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA",
+    "name": "Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-PLA-GY-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA",
+    "name": "PLA Galaxy | Galaxy Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PLAGL-GLG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA",
+    "name": "PLA Galaxy | Star Brown",
+    "hex": "#5D4037",
+    "sku": "DLZ-US-SL-PLAGL-SBN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA",
+    "name": "PLA Galaxy | Stardust Purple",
+    "hex": "#6A1B9A",
+    "sku": "DLZ-US-SL-PLAGL-SDP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA",
+    "name": "PLA Galaxy | Starlit Flow",
+    "hex": "#966C31",
+    "sku": "DLZ-US-SL-PLAGL-SF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA",
+    "name": "Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-PLA-RD-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA",
+    "name": "Silver",
+    "hex": "#B0BEC5",
+    "sku": "DLZ-US-SL-PLA-SV-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA",
+    "name": "Twinkling Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-PLATK-BK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA",
+    "name": "Twinkling Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PLATK-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA",
+    "name": "White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PLA-WT-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "High Speed Matte PLA | Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-HSPLAYG-BK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "High Speed Matte PLA | Cherry Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-HSPLAYG-CR-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "High Speed Matte PLA | Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-HSPLAYG-GY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "High Speed Matte PLA | Oliver Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-HSPLAYG-OG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "High Speed Matte PLA | Sky Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-HSPLAYG-SB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "High Speed Matte PLA | Sunny Orange",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-HSPLAYG-SO-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "High Speed Matte PLA | White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-HSPLAYG-WT-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-PLAYG-BK-3KGSPOOL",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-EU-SL-PLAYG-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Blue(Klein Blue)",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PLAYG-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Bright Yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-PLAYG-BY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Clay",
+    "hex": "#A1887F",
+    "sku": "DLZ-US-SL-PLAYG-CA-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PLAYG-GN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-PLAYG-GY-3KGSPOOL",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Klein Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-EU-SL-PLAYG-KB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Light Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PLAYG-LB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Ocean Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PLAYG-OB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Olive Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PLAYG-OG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Orange(Sunny Orange)",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-PLAYG-OR-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Pink",
+    "hex": "#EC407A",
+    "sku": "DLZ-US-SL-PLAYG-PK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Powder Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PLAYG-PB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Purple(Lavender Purple)",
+    "hex": "#6A1B9A",
+    "sku": "DLZ-US-SL-PLAYG-PP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-PLAYG-RD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Sprout Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PLAYG-SG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PLAYG-WT-3KGSPOOL",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Matte Yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-EU-SL-PLAYG-YL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Apple Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-EU-SL-PLAMT-AG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Beige (Skin)",
+    "hex": "#D7CCC8",
+    "sku": "DLZ-EU-SL-PLA-SK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-EU-SL-PLA-BK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Blau(Klein Blue)",
+    "hex": "#1565C0",
+    "sku": "DLZ-EU-SL-PLA+-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Blue (Sky Blue)",
+    "hex": "#1565C0",
+    "sku": "DLZ-EU-SL-PLAMT-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Blue Gray",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-EU-SL-PLA+V2-BG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Blue Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-EU-SL-PLA-BG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Blue(Klein Blue)",
+    "hex": "#1565C0",
+    "sku": "DLZ-EU-SL-PLA-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Bone White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-EU-SL-PLA-BWT-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Ceramic White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-EU-SL-PLA-CM-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Cherry Red",
+    "hex": "#C62828",
+    "sku": "DLZ-EU-SL-PLA+-CR-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Chocolate",
+    "hex": "#4E342E",
+    "sku": "DLZ-EU-SL-PLAMT-CC-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Coffee Brown",
+    "hex": "#5D4037",
+    "sku": "DLZ-EU-SL-PLA+-CBN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Coffee Brown(Coffee)",
+    "hex": "#5D4037",
+    "sku": "DLZ-EU-SL-PLA-CBN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Cream White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-EU-SL-PLAMT-CW-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Cyan",
+    "hex": "#AF652C",
+    "sku": "DLZ-EU-SL-PLA-CY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Fuchsia",
+    "hex": "#9341C3",
+    "sku": "DLZ-EU-SL-PLA-FC-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Gold",
+    "hex": "#FFC107",
+    "sku": "DLZ-EU-SL-PLA-GD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Gras Grün",
+    "hex": "#C99636",
+    "sku": "DLZ-EU-SL-PLA+-GG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Grass Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-EU-SL-PLA-GG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-EU-SL-PLA-GN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Green (Mint green)",
+    "hex": "#2E7D32",
+    "sku": "DLZ-EU-SL-PLAMT-GN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-EU-SL-PLA-GY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Ice Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-EU-SL-PLAMT-IB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Klein Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-EU-SL-PLA+-KB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Lavender Purple",
+    "hex": "#6A1B9A",
+    "sku": "DLZ-EU-SL-PLA+V2-LP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Magenta",
+    "hex": "#C44580",
+    "sku": "DLZ-EU-SL-PLA-MAG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Magenta (Fuchsia)",
+    "hex": "#5B8F38",
+    "sku": "DLZ-EU-SL-PLA+-FS-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Matte Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-EU-SL-PLAYG-BK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Matte Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-EU-SL-PLAYG-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Matte Clay",
+    "hex": "#A1887F",
+    "sku": "DLZ-EU-SL-PLAYG-CA-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Matte Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-EU-SL-PLAYG-GN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Matte Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-EU-SL-PLAYG-GY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Matte Light Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-EU-SL-PLAYG-LB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Matte Light Yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-EU-SL-PLAYG-BY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Matte Oliver Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-EU-SL-PLAYG-OG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Matte Pink",
+    "hex": "#EC407A",
+    "sku": "DLZ-EU-SL-PLAYG-PK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Matte Purple",
+    "hex": "#6A1B9A",
+    "sku": "DLZ-EU-SL-PLAYG-PP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Matte Red",
+    "hex": "#C62828",
+    "sku": "DLZ-EU-SL-PLAYG-RD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Matte White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-EU-SL-PLAYG-WT-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Midnight",
+    "hex": "#72A33E",
+    "sku": "DLZ-EU-SL-PLA+-MN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Mint Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-EU-SL-PLA+-MG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Oak(wood)",
+    "hex": "#8D6E63",
+    "sku": "DLZ-EU-SL-PLA-OK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Olive Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-EU-SL-PLAMT-OG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Orange",
+    "hex": "#EF6C00",
+    "sku": "DLZ-EU-SL-PLA-OR-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Pink (Sakura Pink)",
+    "hex": "#EC407A",
+    "sku": "DLZ-EU-SL-PLAMT-SP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-EU-SL-PLA-BK-0.25KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-EU-SL-PLA-BL-0.25KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA Grass Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-EU-SL-PLA-GG-0.25KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-EU-SL-PLA-GY-0.25KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA Red",
+    "hex": "#C62828",
+    "sku": "DLZ-EU-SL-PLA-RD-0.25KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA Transparent",
+    "hex": "#ECEFF1",
+    "sku": "DLZ-EU-SL-PLA-TP-0.25KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-EU-SL-PLA-WT-0.25KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA-Meta Black",
+    "hex": "#1A1A1A",
+    "sku": "EBAY-SL-PLAMT-BK-0.25KG-EU",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA-Meta Blue",
+    "hex": "#1565C0",
+    "sku": "SL-PLAMT-BL-0.25KG-EU",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA-Meta Green",
+    "hex": "#2E7D32",
+    "sku": "SL-PLAMT-GN-0.25KG-EU",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA-Meta Grey",
+    "hex": "#6B6B6B",
+    "sku": "EBAY-SL-PLAMT-GY-0.25KG-EU",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA-Meta Pink",
+    "hex": "#EC407A",
+    "sku": "SL-PLAMT-PK-0.25KG-EU",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA-Meta Red",
+    "hex": "#C62828",
+    "sku": "SL-PLAMT-RD-0.25KG-EU",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA-Meta White",
+    "hex": "#F5F5F5",
+    "sku": "EBAY-SL-PLAMT-WT-0.25KG-EU",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "PLA-Meta Yellow",
+    "hex": "#F9A825",
+    "sku": "SL-PLAMT-YL-0.25KG-EU",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Pure Yellow(Vivid Yellow)",
+    "hex": "#F9A825",
+    "sku": "DLZ-EU-SL-PLA+V2-PY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Purple (Lavender Purple)",
+    "hex": "#6A1B9A",
+    "sku": "DLZ-EU-SL-PLA-PP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Red",
+    "hex": "#C62828",
+    "sku": "DLZ-EU-SL-PLA-RD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Red (Cherry Red)",
+    "hex": "#C62828",
+    "sku": "DLZ-EU-SL-PLAMT-RD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Roasted Chestnut Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-EU-SL-PLA-RCN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Sakura Pink",
+    "hex": "#EC407A",
+    "sku": "DLZ-EU-SL-PLA+-SP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Silk Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-EU-SL-SILK-BK-0.25KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Silk Light Gold",
+    "hex": "#FFC107",
+    "sku": "DLZ-EU-SL-SILK-LG-0.25KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Silk Silver",
+    "hex": "#B0BEC5",
+    "sku": "DLZ-EU-SL-SILK-SV-0.25KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Silver",
+    "hex": "#B0BEC5",
+    "sku": "DLZ-EU-SL-PLA-SV-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Skin(Beige)",
+    "hex": "#D7CCC8",
+    "sku": "DLZ-EU-SL-PLA+V2-SK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Sky Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-EU-SL-PLA+-SB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Sunn Orange",
+    "hex": "#EF6C00",
+    "sku": "DLZ-EU-SL-PLA+-SO-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Sunny Orange",
+    "hex": "#EF6C00",
+    "sku": "DLZ-EU-SL-PLAMT-SO-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Taro Purple",
+    "hex": "#6A1B9A",
+    "sku": "DLZ-EU-SL-PLAMT-TOP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Transparen Purple",
+    "hex": "#6A1B9A",
+    "sku": "DLZ-EU-SL-PLA-TPP2-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Transparent",
+    "hex": "#ECEFF1",
+    "sku": "DLZ-EU-SL-PLA+-TP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Transparent Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-EU-SL-PLA-TPBL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Transparent Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-EU-SL-PLA-TPGN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Transparent Orange",
+    "hex": "#EF6C00",
+    "sku": "DLZ-EU-SL-PLA-TO2-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Transparent Red",
+    "hex": "#C62828",
+    "sku": "DLZ-EU-SL-PLA-TPRD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Transparent Yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-EU-SL-PLA-TY2-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Transparent(Clear)",
+    "hex": "#ECEFF1",
+    "sku": "DLZ-EU-SL-PLA-TP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Vivid Yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-EU-SL-PLA-VY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-EU-SL-PLA-WT-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-EU-SL-PLA-YL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA Meta",
+    "name": "Yellow (Lemon Yellow)",
+    "hex": "#F9A825",
+    "sku": "DLZ-EU-SL-PLAMT-YL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+",
+    "name": "Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-PLA+-BK-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+",
+    "name": "Gold",
+    "hex": "#FFC107",
+    "sku": "DLZ-US-SL-PLA+-GD-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+",
+    "name": "Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-PLA+-GY-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+",
+    "name": "Silver",
+    "hex": "#B0BEC5",
+    "sku": "DLZ-US-SL-PLA+-SV-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+",
+    "name": "White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PLA+-WT-5KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Black 1KG",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-PLA-BK-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Blue 1KG (Klein Blue)",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PLA-KB-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Fuchsia 1KG",
+    "hex": "#9A5037",
+    "sku": "DLZ-US-SL-PLA+-FS-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Gold 1KG",
+    "hex": "#FFC107",
+    "sku": "DLZ-US-SL-PLA-GD-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Grass Green 1KG",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PLA-GG-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Grey 1KG",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-PLA-GY-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Lemon Yellow 1KG",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-PLA-LY-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Oliver Green 1KG",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PLA+-OG-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Orange 1KG",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-PLA-SO-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Orange(Sunny Orange) 1KG",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-PLA+-OR-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Red 1KG",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-PLA-RD-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Silver 1KG",
+    "hex": "#B0BEC5",
+    "sku": "DLZ-US-SL-PLA-SV-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Sky Blue 1KG",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PLA-SB-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Transparent 1KG",
+    "hex": "#ECEFF1",
+    "sku": "DLZ-US-SL-PLA+-TP-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Transparent Blue 1KG",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-PLA+-TPBL-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Transparent Green 1KG",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-PLA+-TPGN-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Transparent Orange 1KG",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-PLA+-TPOR-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Transparent Red 1KG",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-PLA+-TPRD-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Vivid Yellow 1KG",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-PLA+V2-VY-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "White 1KG",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-PLA-WT-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "PLA+2.0",
+    "name": "Yellow 1KG",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-PLA+-YL-RF-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Rainbow-01",
+    "hex": "#AB47BC",
+    "sku": "DLZ-US-SL-PLA-RB01-8M-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Rainbow-02",
+    "hex": "#AB47BC",
+    "sku": "DLZ-US-SL-PLA-RB02-8M-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Rainbow-03",
+    "hex": "#AB47BC",
+    "sku": "DLZ-US-SL-PLA-RB03-8M-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Rainbow-04",
+    "hex": "#AB47BC",
+    "sku": "DLZ-US-SL-PLA-RB04-8M-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Rainbow-05",
+    "hex": "#AB47BC",
+    "sku": "DLZ-US-SL-SILK-RB05-8M-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Rainbow-06",
+    "hex": "#AB47BC",
+    "sku": "DLZ-US-SL-SILK-RB06-8M-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-SILK-BK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-SILK-BL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Brass",
+    "hex": "#6343B1",
+    "sku": "DLZ-US-SL-SILK-BS-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Bronze",
+    "hex": "#918536",
+    "sku": "DLZ-US-SL-SILK-BZ-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-SILK-GN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-SILK-GY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Light Gold",
+    "hex": "#FFC107",
+    "sku": "DLZ-US-SL-SILK-LG-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Orange",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-SILK-OR-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Pink",
+    "hex": "#EC407A",
+    "sku": "DLZ-US-SL-SILK-PK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Purple",
+    "hex": "#6A1B9A",
+    "sku": "DLZ-US-SL-SILK-PP-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-SILK-RD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Red Copper",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-SILK-RC-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Silver",
+    "hex": "#B0BEC5",
+    "sku": "DLZ-US-SL-SILK-SV-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-SILK-WT-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Silk Yellow",
+    "hex": "#F9A825",
+    "sku": "DLZ-US-SL-SILK-YL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Transparent Rainbow-01",
+    "hex": "#ECEFF1",
+    "sku": "DLZ-US-SL-PLATPRB-RB01-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Transparent Rainbow-02",
+    "hex": "#ECEFF1",
+    "sku": "DLZ-US-SL-PLATPRB-RB02-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Transparent Rainbow-03",
+    "hex": "#ECEFF1",
+    "sku": "DLZ-US-SL-PLATPRB-RB03-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Silk PLA",
+    "name": "Transparent Rainbow-04",
+    "hex": "#ECEFF1",
+    "sku": "DLZ-US-SL-PLATPRB-RB04-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "Azure",
+    "hex": "#6BA942",
+    "sku": "DLZ-US-SL-TPU90A-AZ-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "Black",
+    "hex": "#1A1A1A",
+    "sku": "DLZ-US-SL-TPU90A-BK-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "Blue",
+    "hex": "#1565C0",
+    "sku": "4US-TPU BLUE",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "Burgundy",
+    "hex": "#BE2734",
+    "sku": "DLZ-US-SL-TPUSK-BD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "Cream White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-TPUSK-CW-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "Dark Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-TPUSK-DB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "Green",
+    "hex": "#2E7D32",
+    "sku": "DLZ-US-SL-TPU90A-GN-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "Grey",
+    "hex": "#6B6B6B",
+    "sku": "DLZ-US-SL-TPU90A-GY-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "Light Blue",
+    "hex": "#1565C0",
+    "sku": "DLZ-US-SL-TPUSK-LB-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "Orange(Sunny Orange)",
+    "hex": "#EF6C00",
+    "sku": "DLZ-US-SL-TPU90A-OR-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "Red",
+    "hex": "#C62828",
+    "sku": "DLZ-US-SL-TPU90A-RD-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "Transparent",
+    "hex": "#ECEFF1",
+    "sku": "4US-TPU WHITE",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "TPU",
+    "name": "White",
+    "hex": "#F5F5F5",
+    "sku": "DLZ-US-SL-TPU90A-WT-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Wood PLA",
+    "name": "Cherry Wood 1KG",
+    "hex": "#D32F2F",
+    "sku": "DLZ-US-SL-OWOOD-CW-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Wood PLA",
+    "name": "Maple Wood 1KG",
+    "hex": "#8D6E63",
+    "sku": "DLZ-US-SL-OWOOD-MW-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Wood PLA",
+    "name": "Walnut Wood 1KG",
+    "hex": "#8D6E63",
+    "sku": "DLZ-US-SL-OWOOD-WL-1KG",
+    "source": "store.sunlu.com products.json"
+  },
+  {
+    "material": "Wood PLA",
+    "name": "Wood 1KG",
+    "hex": "#8D6E63",
+    "sku": "DLZ-US-SL-OWOOD-WD-1KG",
+    "source": "store.sunlu.com products.json"
+  }
+]

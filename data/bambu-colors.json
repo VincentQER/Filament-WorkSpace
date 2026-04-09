@@ -1,0 +1,893 @@
+[
+  {
+    "material": "ABS",
+    "name": "White",
+    "hex": "#FFFFFF",
+    "source": "Bambu_ABS_Hex_Code_(1).pdf",
+    "sku": "40100",
+    "previewUrl": "https://store.bblcdn.com/s7/default/1ad485ff4a72413b90e944ffde4fa861/ABS_White.png",
+    "storeUrl": "https://us.store.bambulab.com/products/abs-filament?id=40475105493128"
+  },
+  {
+    "material": "ABS",
+    "name": "Bambu Green",
+    "hex": "#00AE42",
+    "source": "Bambu_ABS_Hex_Code_(1).pdf",
+    "sku": "40500",
+    "previewUrl": "https://store.bblcdn.com/s7/default/910be80e4fcf43ddbd66c40773ecce0f/ABSbambugreen.png",
+    "storeUrl": "https://us.store.bambulab.com/products/abs-filament?id=42512928833672"
+  },
+  {
+    "material": "ABS",
+    "name": "Olive",
+    "hex": "#789D4A",
+    "source": "Bambu_ABS_Hex_Code_(1).pdf",
+    "sku": "40502",
+    "previewUrl": "https://store.bblcdn.com/s7/default/e45f66c840c7454b860b0ffb17787dda/80cf6768c03d129dfa6a01ac67a5b402.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/abs-filament?id=42720053952648"
+  },
+  {
+    "material": "ABS",
+    "name": "Azure",
+    "hex": "#489FDF",
+    "source": "Bambu_ABS_Hex_Code_(1).pdf",
+    "sku": "40601",
+    "previewUrl": "https://store.bblcdn.com/s7/default/a840092ea2804025a123e115128c1299/000878ce6144c05ffac949f66b05a18b.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/abs-filament?id=42720053362824"
+  },
+  {
+    "material": "ABS",
+    "name": "Navy Blue",
+    "hex": "#0C2340",
+    "source": "Bambu_ABS_Hex_Code_(1).pdf",
+    "sku": "40602",
+    "previewUrl": "https://store.bblcdn.com/s7/default/1de0e532e21642e1a4a857c6e01fa1d3/0be9a584b30358020d8706f2aa8ec9c2.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/abs-filament?id=42720052707464"
+  },
+  {
+    "material": "ABS",
+    "name": "Blue",
+    "hex": "#0A2CA5",
+    "source": "Bambu_ABS_Hex_Code_(1).pdf",
+    "sku": "40600",
+    "previewUrl": "https://store.bblcdn.com/s7/default/3b2f526b80734e429d9a424e07f3c36b/ABS_Blue.png",
+    "storeUrl": "https://us.store.bambulab.com/products/abs-filament?id=40475105591432"
+  },
+  {
+    "material": "ABS",
+    "name": "Tangerine Yellow",
+    "hex": "#FFC72C",
+    "source": "Bambu_ABS_Hex_Code_(1).pdf",
+    "sku": "40402",
+    "previewUrl": "https://store.bblcdn.com/s7/default/599d443346194649beee96e12f32d074/7376d19b161f2a93a4051e47289d0505.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/abs-filament?id=42720059097224"
+  },
+  {
+    "material": "ABS",
+    "name": "Orange",
+    "hex": "#FF6A13",
+    "source": "Bambu_ABS_Hex_Code_(1).pdf",
+    "sku": "40300",
+    "previewUrl": "https://store.bblcdn.com/s7/default/25d7b833bf694c70b9ef3cd649f3cf36/ABSorange.png",
+    "storeUrl": "https://us.store.bambulab.com/products/abs-filament?id=42512931750024"
+  },
+  {
+    "material": "ABS",
+    "name": "Red",
+    "hex": "#D32941",
+    "source": "Bambu_ABS_Hex_Code_(1).pdf",
+    "sku": "40200",
+    "previewUrl": "https://store.bblcdn.com/s7/default/95bd38c6dc604bdab7b3d2fc7b67e0ee/ABS_Red.png",
+    "storeUrl": "https://us.store.bambulab.com/products/abs-filament?id=40475105525896"
+  },
+  {
+    "material": "ABS",
+    "name": "Silver",
+    "hex": "#87909A",
+    "source": "Bambu_ABS_Hex_Code_(1).pdf",
+    "sku": "40102",
+    "previewUrl": "https://store.bblcdn.com/s7/default/69834a7536c540e489913a0f8e707e5e/ABSsilver.png",
+    "storeUrl": "https://us.store.bambulab.com/products/abs-filament?id=41195746295944"
+  },
+  {
+    "material": "ABS",
+    "name": "Black",
+    "hex": "#000000",
+    "source": "Bambu_ABS_Hex_Code_(1).pdf",
+    "sku": "40101",
+    "previewUrl": "https://store.bblcdn.com/s7/default/cfdefec225e6430c82cbe2f8766b6f70/ABS_Black.png",
+    "storeUrl": "https://us.store.bambulab.com/products/abs-filament?id=40475105460360"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Jade White",
+    "hex": "#FFFFFF",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10100",
+    "previewUrl": "https://store.bblcdn.com/s7/default/f00291f9a7464d948b9f28fad351932c/White.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=40475106640008"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Magenta",
+    "hex": "#EC008C",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10202",
+    "previewUrl": "https://store.bblcdn.com/s7/default/9b179992f52643b2b91c213d86a0c5e1/Magenta.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=41884192211080"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Gold",
+    "hex": "#E4BD68",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10401",
+    "previewUrl": "https://store.bblcdn.com/s7/default/b8f76cac43b94ef18c4d3801f2bd3856/Gold.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=41884191195272"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Mistletoe Green",
+    "hex": "#3F8E43",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10502",
+    "previewUrl": "https://store.bblcdn.com/s7/default/2483d6189ae94ee9971c38363bbce6e5/063c3c25cb6510ea2566af540e5e3c99_287359af-ac7d-4683-ad97-25e7a1f420f3.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=41884193030280"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Red",
+    "hex": "#C12E1F",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10200",
+    "previewUrl": "https://store.bblcdn.com/s7/default/c93d0a825f094387a61ba3d5ae0499c7/Red.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=40475107000456"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Purple",
+    "hex": "#5E43B7",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10700",
+    "previewUrl": "https://store.bblcdn.com/s7/default/b4c16fb72f544e998b098ce854772e81/PLAPurple.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=41884191752328"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Beige",
+    "hex": "#F7E6DE",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10201",
+    "previewUrl": "https://store.bblcdn.com/s7/default/976faf2e1ea24428aaacd7ec37e2a170/Beige.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=40475106771080"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Pink",
+    "hex": "#F55A74",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10203",
+    "previewUrl": "https://store.bblcdn.com/s7/default/e0b16d45e5d64df88f8bca8609f9a0d2/Pink.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=40475106902152"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Sunflower Yellow",
+    "hex": "#FEC600",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10402",
+    "previewUrl": "https://store.bblcdn.com/s7/default/dcc368a07e73489da62a8cceb29e31a2/SunflowerYellow.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=43045596233864"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Bronze",
+    "hex": "#847D48",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10801",
+    "previewUrl": "https://store.bblcdn.com/s7/default/ff1f58a232db4b8ba8ed85da1698d1bb/Bronze.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=41884190703752"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Turquoise",
+    "hex": "#00B1B7",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10605",
+    "previewUrl": "https://store.bblcdn.com/s7/default/0301553043e245e1b4f280abaf00fcfd/Turquoise.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=43045596921992"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Indigo Purple",
+    "hex": "#482960",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10701",
+    "previewUrl": "https://store.bblcdn.com/s7/default/db7a279375f049dfab2036d8bd8fcac7/IndigoPurple.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=43045597446280"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Light Gray",
+    "hex": "#D1D3D5",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10104",
+    "previewUrl": "https://store.bblcdn.com/s7/default/d9b993d99ef54581968a5711269f2be2/light_gray_25c0c41d-107b-4d05-96d1-3de1efb728d9.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=42844628975752"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Hot Pink",
+    "hex": "#F5547C",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10204",
+    "previewUrl": "https://store.bblcdn.com/s7/default/cda8ef4f247943c6934ff1d3a9eef195/HotPink.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=43045599019144"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Yellow",
+    "hex": "#F4EE2A",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10400",
+    "previewUrl": "https://store.bblcdn.com/s7/default/5728a39780844f06a9dc4bf3c3907a15/Yellow.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=40475106836616"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Cocoa Brown",
+    "hex": "#6F5034",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10802",
+    "previewUrl": "https://store.bblcdn.com/s7/default/ac639216989444d4b065ae5017ab8c80/CocoaBrown.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=43045598724232"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Cyan",
+    "hex": "#0086D6",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10603",
+    "previewUrl": "https://store.bblcdn.com/s7/default/beb1e91ec6f44fa7a12e0793337d7c52/CMYK-Cyan-1.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=41884192571528"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Blue Grey",
+    "hex": "#5B6579",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10602",
+    "previewUrl": "https://store.bblcdn.com/s7/default/3ca4bd461d744e84bf7432439236edf9/PLA-Basic_Blue-Gray.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=40475106869384"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Silver",
+    "hex": "#A6A9AA",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10102",
+    "previewUrl": "https://store.bblcdn.com/s7/default/04c182e9baf840be8573ec644e309479/Sliver.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=40475106803848"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Orange",
+    "hex": "#FF6A13",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10300",
+    "previewUrl": "https://store.bblcdn.com/s7/default/9be8ee6d2e094072ab781d45ae24c2e8/Orange.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=40475106672776"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Bright Green",
+    "hex": "#BECF00",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10503",
+    "previewUrl": "https://store.bblcdn.com/s7/default/20fb60d009c8414f95caed07a4705de4/BrightGreen.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=43045598167176"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Brown",
+    "hex": "#9D432C",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10800",
+    "previewUrl": "https://store.bblcdn.com/s7/default/67403fbe583b4c2888272b874789ba57/PLA-Basic_Brown.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=40475106967688"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Blue",
+    "hex": "#0A2989",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10601",
+    "previewUrl": "https://store.bblcdn.com/s7/default/d9f20007e8074789926e6d09db4a98fa/PLABasicBlue.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=40475106705544"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Dark Gray",
+    "hex": "#545454",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10105",
+    "previewUrl": "https://store.bblcdn.com/s7/default/f19847c3b512400588d34b27434a01ad/pla_basic_dark_gray.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=42844629008520"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Gray",
+    "hex": "#8E9089",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10103",
+    "previewUrl": "https://store.bblcdn.com/s7/default/87769b450c3741df8c6ea30506aca96f/PLA-Basic_Gray.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=40475106738312"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Pumpkin Orange",
+    "hex": "#FF9016",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10301",
+    "previewUrl": "https://store.bblcdn.com/s7/default/d5ba9b091d33481fa397bab61034f031/PumpkinOrange.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=43045599543432"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Bambu Green",
+    "hex": "#00AE42",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10501",
+    "previewUrl": "https://store.bblcdn.com/s7/default/dd18e1115a7e444396617a3a884aa091/Bambu_Green.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=41135419228296"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Maroon Red",
+    "hex": "#9D2235",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10205",
+    "previewUrl": "https://store.bblcdn.com/s7/default/ee52b43861ef45849965b6dcdd87b617/MaroonRed.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=43045591679112"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Cobalt Blue",
+    "hex": "#0056B8",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10604",
+    "previewUrl": "https://store.bblcdn.com/s7/default/b4ed2e8a24f344538d73ce44069dc17c/CobaltBlue.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=43045599215752"
+  },
+  {
+    "material": "PLA Basic",
+    "name": "Black",
+    "hex": "#000000",
+    "source": "Bambu_PLA_Basic_Hex_Code.pdf",
+    "sku": "10101",
+    "previewUrl": "https://store.bblcdn.com/s7/default/d9f087ffd3ae4283893f8a07d6b7e42a/PLA-Basic_Black_e33768fd-c87a-4b2d-a3f7-0b3afc81f13f.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-basic-filament?id=40988815556744"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Ivory White",
+    "hex": "#FFFFFF",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11100",
+    "previewUrl": "https://store.bblcdn.com/s7/default/5e5b56df86354802990d37fc23547a01/PLA-Matte_Ivory-White.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=40489681780872"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Bone White",
+    "hex": "#CBC6B8",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11103",
+    "previewUrl": "https://store.bblcdn.com/s7/default/1f628abee56742aba4d870cad67a1110/7_fea42c37-c6dc-4588-8778-162cf2ee8ab4.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=43292383936648"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Desert Tan",
+    "hex": "#E8DBB7",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11401",
+    "previewUrl": "https://store.bblcdn.com/s7/default/c9138ffc22bf41eda20840c9318679d9/Matte-Desert-Tan.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=42259062620296"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Latte Brown",
+    "hex": "#D3B7A7",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11800",
+    "previewUrl": "https://store.bblcdn.com/s7/default/c9ce1efb045a4a7da9503173533e7a35/Matte-Latte-Brown.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=40489682010248"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Caramel",
+    "hex": "#AE835B",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11803",
+    "previewUrl": "https://store.bblcdn.com/s7/default/ba706aef96514617abe191d4c7899b3d/8_eeebfc86-28d0-479a-b66e-38945e18ca66.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=43292384100488"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Terracotta",
+    "hex": "#B15533",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11203",
+    "previewUrl": "https://store.bblcdn.com/s7/default/51bf56e467dc47aa903b8e2401487983/5_8b99d140-c6bc-4480-a228-37f7a6932ecc.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=43292384133256"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Dark Brown",
+    "hex": "#7D6556",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11801",
+    "previewUrl": "https://store.bblcdn.com/s7/default/dd5636bd8bb942b39192b42010360582/Matte-Dark-Brown.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=41884208529544"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Dark Chocolate",
+    "hex": "#4D3324",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11802",
+    "previewUrl": "https://store.bblcdn.com/s7/default/6b302b424d0c48c9a6bfbbe63452068d/3_93657f2f-ee90-45bc-84ce-14e92a2bc418.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=43292384067720"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Lilac Purple",
+    "hex": "#AE96D4",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11700",
+    "previewUrl": "https://store.bblcdn.com/s7/default/49fb500f50284142a42a44598e6aeffd/Matte-Lilac-purple.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=40489682108552"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Sakura Pink",
+    "hex": "#E8AFCF",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11201",
+    "previewUrl": "https://store.bblcdn.com/s7/default/c3e803a11302443a91a30ced332a899a/Matte-Sakura-Pink.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=40489681879176"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Mandarin Orange",
+    "hex": "#F99963",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11300",
+    "previewUrl": "https://store.bblcdn.com/s7/default/9d9735b366524d0e82bf75672a00b7c8/Matte-Mandarin-Orange.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=40489681846408"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Lemon Yellow",
+    "hex": "#F7D959",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11400",
+    "previewUrl": "https://store.bblcdn.com/s7/default/448b397cc5084c3984eb8b20fe20ebfa/Matte-Lemon-Yellow.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=40489681911944"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Plum",
+    "hex": "#950051",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11701",
+    "previewUrl": "https://store.bblcdn.com/s7/default/ac4928805ccd40c2a167bc0a04c5d097/6_0286362c-590b-41c0-9e4a-aca6b18fa243.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=43292383969416"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Scarlet Red",
+    "hex": "#DE4343",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11200",
+    "previewUrl": "https://store.bblcdn.com/s7/default/237a34473c55494694240accd4f9af78/Matte-Scarlet-Red.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=40489682043016"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Dark Red",
+    "hex": "#BB3D43",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11202",
+    "previewUrl": "https://store.bblcdn.com/s7/default/a1c43bea2e2f477ba06266dce33a7afe/Matte-Dark-Red.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=41884207415432"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Dark Green",
+    "hex": "#68724D",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11501",
+    "previewUrl": "https://store.bblcdn.com/s7/default/a9b6a4050cd049deb14284169f6f827d/Matte-Dark-Green.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=41884210233480"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Grass Green",
+    "hex": "#61C680",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11500",
+    "previewUrl": "https://store.bblcdn.com/s7/default/b4f52d1732be4dd784b378aa983c2158/Matte-Grass-Green.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=40489681977480"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Apple Green",
+    "hex": "#C2E189",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11502",
+    "previewUrl": "https://store.bblcdn.com/s7/default/81e34ffe42eb46709c9f316abaa77b72/2_390d401c-b7da-4498-aa98-737072ead278.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=43292384034952"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Ice Blue",
+    "hex": "#A3D8E1",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11601",
+    "previewUrl": "https://store.bblcdn.com/s7/default/4c3e25c5c5f647b4881dc19f64648636/Matte-Ice-Blue.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=40489682075784"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Sky Blue",
+    "hex": "#56B7E6",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11603",
+    "previewUrl": "https://store.bblcdn.com/s7/default/6baaa9f5ba7846bb96099fe3a48ba450/4_4a4fd3a0-98d8-4b9a-bda7-6f5189657201.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=43292384002184"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Marine Blue",
+    "hex": "#0078BF",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11600",
+    "previewUrl": "https://store.bblcdn.com/s7/default/51f640a9628b4dd2a675f4d9e16a0aab/Matte-Marine-Blue.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=40489682141320"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Dark Blue",
+    "hex": "#042F56",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11602",
+    "previewUrl": "https://store.bblcdn.com/s7/default/8001cdb3f2594745b624bdcd73f88f3e/Matte-Dark-Blue.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=41884207972488"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Ash Gray",
+    "hex": "#9B9EA0",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11102",
+    "previewUrl": "https://store.bblcdn.com/s7/default/502359426c1c4e9687a7f921f741b623/Matte-Ash-Grey.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=40489681813640"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Nardo Gray",
+    "hex": "#757575",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11104",
+    "previewUrl": "https://store.bblcdn.com/s7/default/e74f729fcece40f7a2a70ca79d6e6728/1_9c798ba9-3e86-490d-9894-78ec03e3465a.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=43292384166024"
+  },
+  {
+    "material": "PLA Matte",
+    "name": "Charcoal",
+    "hex": "#000000",
+    "source": "Bambu_PLA_Matte_Hex_Code.pdf",
+    "sku": "11101",
+    "previewUrl": "https://store.bblcdn.com/s7/default/3b7c97df9bab4d498df93a569dfb51e7/PLA-Matte_Charcoal.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-matte?id=40489681944712"
+  },
+  {
+    "material": "TPU 85A",
+    "name": "Black",
+    "hex": "#000000",
+    "source": "Bambu_TPU_85A_Hex_Code.pdf",
+    "sku": "51103",
+    "previewUrl": "https://store.bblcdn.com/s7/default/ca1edf855bc34e54b96cf61ae8274926/BLACK.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=679919133694869522"
+  },
+  {
+    "material": "TPU 85A",
+    "name": "Light Cyan",
+    "hex": "#C3E2D6",
+    "source": "Bambu_TPU_85A_Hex_Code.pdf",
+    "sku": "51500",
+    "previewUrl": "https://store.bblcdn.com/s7/default/8875e6d5c4dd49f3993498f769718480/TPU_85_Cyan.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=573761693833371666"
+  },
+  {
+    "material": "TPU 85A",
+    "name": "Neon Orange",
+    "hex": "#F68B1B",
+    "source": "Bambu_TPU_85A_Hex_Code.pdf",
+    "sku": "51305",
+    "previewUrl": "https://store.bblcdn.com/s7/default/99371363c32a4ff7842c91bc484d7f5a/TPU_85_Orange.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=654149975560871937"
+  },
+  {
+    "material": "TPU 85A",
+    "name": "Flesh",
+    "hex": "#F3CFB2",
+    "source": "Bambu_TPU_85A_Hex_Code.pdf",
+    "sku": "51201",
+    "previewUrl": "https://store.bblcdn.com/s7/default/885912c4834348f48a7e1563be9126bc/flesh.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=679919133694869528"
+  },
+  {
+    "material": "TPU 85A",
+    "name": "Lime Green",
+    "hex": "#CDEA80",
+    "source": "Bambu_TPU_85A_Hex_Code.pdf",
+    "sku": "51501",
+    "previewUrl": "https://store.bblcdn.com/s7/default/d7b59eca3cc3426a9326cd315e4175b0/lime_green_(2).jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=679919133694869534"
+  },
+  {
+    "material": "TPU 90A",
+    "name": "Black",
+    "hex": "#000000",
+    "source": "Bambu_TPU_90A_Hex_Code_Table.pdf",
+    "sku": "51107",
+    "previewUrl": "https://store.bblcdn.com/s7/default/49e65cb79b5547cfa02b8807aa681f61/TPU_90_BK.png",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=573761693833371690"
+  },
+  {
+    "material": "TPU 90A",
+    "name": "White",
+    "hex": "#FFFFEE",
+    "source": "Bambu_TPU_90A_Hex_Code_Table.pdf",
+    "sku": "51105",
+    "previewUrl": "https://store.bblcdn.com/s7/default/bd01d9d62a4e4ce8bbbfd4d7c6b66fe4/TPU_90_White.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=667270238289068033"
+  },
+  {
+    "material": "TPU 90A",
+    "name": "Grape Jelly",
+    "hex": "#D6ABFF",
+    "source": "Bambu_TPU_90A_Hex_Code_Table.pdf",
+    "sku": "51700",
+    "previewUrl": "https://store.bblcdn.com/s7/default/c2c6cd8df1114ce6acab00d38bce032c/grape_jelly.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=679919133694869504"
+  },
+  {
+    "material": "TPU 90A",
+    "name": "Crystal Blue",
+    "hex": "#7EB4E1",
+    "source": "Bambu_TPU_90A_Hex_Code_Table.pdf",
+    "sku": "51601",
+    "previewUrl": "https://store.bblcdn.com/s7/default/0bc4b79c679749f39fce9f6f132f4e37/Crystal_Blue.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=679919133694869510"
+  },
+  {
+    "material": "TPU 90A",
+    "name": "Cocoa Brown",
+    "hex": "#5C4738",
+    "source": "Bambu_TPU_90A_Hex_Code_Table.pdf",
+    "sku": "51800",
+    "previewUrl": "https://store.bblcdn.com/s7/default/06e784f4a26c41ebb35324a547a287c6/Cocoa_Brown.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=679919133694869516"
+  },
+  {
+    "material": "TPU 90A",
+    "name": "Quicksilver",
+    "hex": "#9EA2A2",
+    "source": "Bambu_TPU_90A_Hex_Code_Table.pdf",
+    "sku": "51102",
+    "previewUrl": "https://store.bblcdn.com/s7/default/9218dd7f72af4425be51eeb30853a75e/silver_2.png",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=697573986952392706"
+  },
+  {
+    "material": "TPU 90A",
+    "name": "Blaze",
+    "hex": "#F1AAA8",
+    "source": "Bambu_TPU_90A_Hex_Code_Table.pdf",
+    "sku": "51901",
+    "previewUrl": "https://store.bblcdn.com/s7/default/775e90a0b2914f81882abc5a13a08a19/TPU_90_Blaze.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=573761693833371678"
+  },
+  {
+    "material": "TPU 90A",
+    "name": "Frozen",
+    "hex": "#FFFFFF",
+    "source": "Bambu_TPU_90A_Hex_Code_Table.pdf",
+    "sku": "51900",
+    "previewUrl": "https://store.bblcdn.com/s7/default/e59836a84ce84a9fa863b4926b3c8977/TPU_90_Frozen.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/tpu-85a-tpu-90a?id=573761693833371672"
+  },
+  {
+    "material": "PETG CF",
+    "name": "Brick Red",
+    "hex": "#9F332A",
+    "source": "PETG-CF_Hex_Code_Table.pdf",
+    "sku": "31200",
+    "previewUrl": "https://store.bblcdn.com/s7/default/391c13326e1a4ef4b3b6c2474598aa9e/PETG-CFred.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-cf?id=41230657978504"
+  },
+  {
+    "material": "PETG CF",
+    "name": "Violet Purple",
+    "hex": "#583061",
+    "source": "PETG-CF_Hex_Code_Table.pdf",
+    "sku": "31700",
+    "previewUrl": "https://store.bblcdn.com/s7/default/528be7fe6a2c4cd9a10713ef2d2002a6/PETG-CFpurp_4608ff17-99e8-4aec-a822-26b4d3188af1.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-cf?id=41230657945736"
+  },
+  {
+    "material": "PETG CF",
+    "name": "Indigo Blue",
+    "hex": "#324585",
+    "source": "PETG-CF_Hex_Code_Table.pdf",
+    "sku": "31600",
+    "previewUrl": "https://store.bblcdn.com/s7/default/31093e7d52524e169c240afed3aeb603/PETG-CFblue.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-cf?id=41230658011272"
+  },
+  {
+    "material": "PETG CF",
+    "name": "Malachite Green",
+    "hex": "#16B08E",
+    "source": "PETG-CF_Hex_Code_Table.pdf",
+    "sku": "31500",
+    "previewUrl": "https://store.bblcdn.com/s7/default/a79d223f175342ef90cd845eaa610c28/PETG-CFgreen.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-cf?id=41230658044040"
+  },
+  {
+    "material": "PETG CF",
+    "name": "Black",
+    "hex": "#000000",
+    "source": "PETG-CF_Hex_Code_Table.pdf",
+    "sku": "31100",
+    "previewUrl": "https://store.bblcdn.com/s7/default/9b2c4be00adb4d01a6790d7e89cc6c26/PETG-CF.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-cf?id=41065287811208"
+  },
+  {
+    "material": "PETG CF",
+    "name": "Titan Gray",
+    "hex": "#565656",
+    "source": "PETG-CF_Hex_Code_Table.pdf",
+    "sku": "31101",
+    "previewUrl": "https://store.bblcdn.com/s7/default/7be1dcc6c83d46b59865dbca05013d59/20231023-105314.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-cf?id=41392116465800"
+  },
+  {
+    "material": "PETG Basic",
+    "name": "Red",
+    "hex": "#D6001C",
+    "source": "PETG_Basic_Hex_Code_Table.pdf",
+    "sku": "30200",
+    "previewUrl": "https://store.bblcdn.com/s7/default/0c68c4b77d1e4837b65aff3d642de865/PETG_BASIC_RED.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-basic?id=703099511296864305"
+  },
+  {
+    "material": "PETG Basic",
+    "name": "Yellow",
+    "hex": "#FCE300",
+    "source": "PETG_Basic_Hex_Code_Table.pdf",
+    "sku": "30400",
+    "previewUrl": "https://store.bblcdn.com/s7/default/eeb192a1653f4576b63f242a30c9f8a5/PETG_BASIC_YELLOW.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-basic?id=703099511296864317"
+  },
+  {
+    "material": "PETG Basic",
+    "name": "Reflex Blue",
+    "hex": "#001489",
+    "source": "PETG_Basic_Hex_Code_Table.pdf",
+    "sku": "30603",
+    "previewUrl": "https://store.bblcdn.com/s7/default/1d160a860b424f56a3d020e499cc7a71/PETG_BASIC_BLUE.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-basic?id=703099511296864329"
+  },
+  {
+    "material": "PETG Basic",
+    "name": "Black",
+    "hex": "#000000",
+    "source": "PETG_Basic_Hex_Code_Table.pdf",
+    "sku": "30101",
+    "previewUrl": "https://store.bblcdn.com/s7/default/759f5dca96eb4ec0b7fa8e43bd9de534/PETG_BASIC_BLACK.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-basic?id=703099511296864269"
+  },
+  {
+    "material": "PETG Basic",
+    "name": "Gray",
+    "hex": "#7F7E83",
+    "source": "PETG_Basic_Hex_Code_Table.pdf",
+    "sku": "30103",
+    "previewUrl": "https://store.bblcdn.com/s7/default/005e2c99b8f544ce87a6f04b88a1e596/PETG_BASIC_GRAY.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-basic?id=703099511296864293"
+  },
+  {
+    "material": "PETG Basic",
+    "name": "Dark Brown",
+    "hex": "#4F2C1D",
+    "source": "PETG_Basic_Hex_Code_Table.pdf",
+    "sku": "30800",
+    "previewUrl": "https://store.bblcdn.com/s7/default/598373aa66be4ce4bc1ba0f71257f1e0/PETG_BASIC_BROWN.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-basic?id=703099511296864341"
+  },
+  {
+    "material": "PETG Basic",
+    "name": "White",
+    "hex": "#FFFFFF",
+    "source": "PETG_Basic_Hex_Code_Table.pdf",
+    "sku": "30100",
+    "previewUrl": "https://store.bblcdn.com/s7/default/ee770e70bbc04c8dbe8d66791dd1181f/PETG_BASIC_WHITE.png",
+    "storeUrl": "https://us.store.bambulab.com/products/petg-basic?id=703099511296864281"
+  },
+  {
+    "material": "PLA CF",
+    "name": "Burgundy Red",
+    "hex": "#951E23",
+    "source": "PLA-CF_Hex_Code_Table.pdf",
+    "sku": "14200",
+    "previewUrl": "https://store.bblcdn.com/s7/default/1b92f2d8468940af912e3b693a2f1514/a607d88492630a4fc0e1169570fcd150_8739bab5-48f4-48a1-9471-199c1e334f3d.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-cf?id=41145212076168"
+  },
+  {
+    "material": "PLA CF",
+    "name": "Iris Purple",
+    "hex": "#69398E",
+    "source": "PLA-CF_Hex_Code_Table.pdf",
+    "sku": "14700",
+    "previewUrl": "https://store.bblcdn.com/s7/default/5e1c40f42cb04b09a052af4cb57dd4cb/PLA-CFIrisPurple.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-cf?id=41286543245448"
+  },
+  {
+    "material": "PLA CF",
+    "name": "Matcha Green",
+    "hex": "#5C9748",
+    "source": "PLA-CF_Hex_Code_Table.pdf",
+    "sku": "14500",
+    "previewUrl": "https://store.bblcdn.com/s7/default/2bb97e74199a40799302931dc10646cc/c0f99c4f6c04f5422dcd8db2da060392.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-cf?id=41158283591816"
+  },
+  {
+    "material": "PLA CF",
+    "name": "Jeans Blue",
+    "hex": "#6E88BC",
+    "source": "PLA-CF_Hex_Code_Table.pdf",
+    "sku": "14600",
+    "previewUrl": "https://store.bblcdn.com/s7/default/6fa666034cc043a0a323587d5aca64bc/5330081a75ef62e73afe0929195b72b8_e3169191-4769-42c4-9caa-6c68bf3ee57b.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-cf?id=41145212043400"
+  },
+  {
+    "material": "PLA CF",
+    "name": "Royal Blue",
+    "hex": "#2842AD",
+    "source": "PLA-CF_Hex_Code_Table.pdf",
+    "sku": "14601",
+    "previewUrl": "https://store.bblcdn.com/s7/default/5d3e6d130d204874ab0597a696532885/20250710-180051.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-cf?id=41286543278216"
+  },
+  {
+    "material": "PLA CF",
+    "name": "Lava Gray",
+    "hex": "#4D5054",
+    "source": "PLA-CF_Hex_Code_Table.pdf",
+    "sku": "14101",
+    "previewUrl": "https://store.bblcdn.com/s7/default/d31d066b74fe46f5a2650df891d25472/83c1bc164a2861ecc083568a0b017ba0_6703fb22-ad79-40f6-b4bf-6053c8d1d9ed.png",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-cf?id=41145212108936"
+  },
+  {
+    "material": "PLA CF",
+    "name": "Black",
+    "hex": "#000000",
+    "source": "PLA-CF_Hex_Code_Table.pdf",
+    "sku": "14100",
+    "previewUrl": "https://store.bblcdn.com/s7/default/b1948cb933824fd394e6071042ff6d00/PLA-CFBlack.jpg",
+    "storeUrl": "https://us.store.bambulab.com/products/pla-cf?id=41003202248840"
+  }
+]
