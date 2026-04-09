@@ -4,67 +4,40 @@ import { FormEvent, Suspense, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 
+function safeNextPath(raw: string | null): string {
+  if (!raw || !raw.startsWith("/") || raw.startsWith("//")) return "/my-inventory";
+  return raw;
+}
+
 function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const verified = searchParams.get("verified") === "1";
   const verifyState = searchParams.get("verify");
+  const nextPath = safeNextPath(searchParams.get("next"));
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const [resendLoading, setResendLoading] = useState(false);
-  const [resendMessage, setResendMessage] = useState("");
-  const [needsVerification, setNeedsVerification] = useState(false);
 
   async function onSubmit(event: FormEvent) {
     event.preventDefault();
     setLoading(true);
     setError("");
-    setNeedsVerification(false);
-    setResendMessage("");
     const res = await fetch("/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
     });
-    const data = (await res.json()) as { error?: string; code?: string };
+    const data = (await res.json()) as { error?: string };
     if (!res.ok) {
-      if (data.code === "EMAIL_NOT_VERIFIED") {
-        setNeedsVerification(true);
-      }
       setError(data.error ?? "Sign-in failed");
       setLoading(false);
       return;
     }
-    router.push("/my-inventory");
+    router.push(nextPath);
     router.refresh();
-  }
-
-  async function onResend() {
-    if (!email || !password) {
-      setResendMessage("Enter your email and password first.");
-      return;
-    }
-    setResendLoading(true);
-    setResendMessage("");
-    const res = await fetch("/api/auth/resend-verification", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
-    const data = (await res.json()) as { error?: string; devVerificationUrl?: string };
-    setResendLoading(false);
-    if (!res.ok) {
-      setResendMessage(data.error ?? "Could not send email");
-      return;
-    }
-    let msg = "Verification email sent. Check your inbox.";
-    if (data.devVerificationUrl) {
-      msg += ` (dev) Link: ${data.devVerificationUrl}`;
-    }
-    setResendMessage(msg);
   }
 
   return (
@@ -77,22 +50,22 @@ function LoginForm() {
       </Link>
       <h1 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-50">Sign in</h1>
       <p className="mt-1 text-sm text-zinc-400">
-        Verify your email after registering, then sign in to open your filament stock.
+        Use the email and password you chose when you registered to open your personal stock dashboard.
       </p>
 
       {verified && (
         <p className="mt-4 rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-200/95">
-          Email verified. Sign in with your email and password.
+          You can sign in now with your email and password.
         </p>
       )}
       {verifyState === "invalid" && (
-        <p className="mt-4 rounded-xl border border-red-500/40 bg-red-500/10 px-3 py-2 text-sm text-red-300">
-          That verification link is invalid or already used. Resend a verification email below.
+        <p className="mt-4 rounded-xl border border-zinc-500/40 bg-zinc-800/50 px-3 py-2 text-sm text-zinc-300">
+          That link is invalid or expired. If you already have an account, sign in below. Otherwise create one.
         </p>
       )}
       {verifyState === "expired" && (
-        <p className="mt-4 rounded-xl border border-amber-500/40 bg-amber-500/10 px-3 py-2 text-sm text-amber-200/95">
-          That verification link has expired. Use &quot;Resend verification email&quot; below.
+        <p className="mt-4 rounded-xl border border-zinc-500/40 bg-zinc-800/50 px-3 py-2 text-sm text-zinc-300">
+          That link has expired. Sign in with your password, or register again if you need a new account.
         </p>
       )}
 
@@ -112,23 +85,6 @@ function LoginForm() {
         autoComplete="current-password"
       />
       {error && <p className="mt-3 text-sm text-red-400">{error}</p>}
-
-      {needsVerification && (
-        <div className="mt-4 rounded-xl border border-white/10 bg-zinc-950/50 p-3">
-          <p className="text-xs text-zinc-400">
-            Didn&apos;t get the email? Resend after confirming email and password match what you used to register.
-          </p>
-          <button
-            type="button"
-            onClick={onResend}
-            disabled={resendLoading}
-            className="mt-2 text-sm font-medium text-emerald-400/90 hover:text-emerald-300 disabled:opacity-50"
-          >
-            {resendLoading ? "Sending…" : "Resend verification email"}
-          </button>
-          {resendMessage && <p className="mt-2 break-all text-xs text-zinc-400">{resendMessage}</p>}
-        </div>
-      )}
 
       <button
         type="submit"

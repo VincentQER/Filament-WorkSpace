@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local SQLite (use DATABASE_URL + Postgres in production)
+/data/app.db
+/data/app.db-*
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

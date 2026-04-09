@@ -1,29 +1,17 @@
 import { NextResponse } from "next/server";
-import db from "@/lib/db";
 import { readAuthFromCookie } from "@/lib/auth";
 import {
   normalizeAvatarUrl,
   normalizePrintersInput,
   rowToPublicProfile,
 } from "@/lib/user-profile";
+import { userGetProfileRow, userUpdateProfileFields } from "@/lib/repos/users";
 
 export async function PATCH(request: Request) {
   const auth = await readAuthFromCookie();
   if (!auth) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
-  const existing = db
-    .prepare(
-      "SELECT email, display_name, avatar_url, address, printers_json FROM users WHERE id = ?",
-    )
-    .get(auth.userId) as
-    | {
-        email: string;
-        display_name: string | null;
-        avatar_url: string | null;
-        address: string | null;
-        printers_json: string | null;
-      }
-    | undefined;
+  const existing = await userGetProfileRow(auth.userId);
 
   if (!existing) {
     return NextResponse.json({ error: "User not found" }, { status: 404 });
@@ -62,21 +50,19 @@ export async function PATCH(request: Request) {
     printersJson = JSON.stringify(normalizePrintersInput(body.printers));
   }
 
-  db.prepare(
-    `UPDATE users SET display_name = ?, avatar_url = ?, address = ?, printers_json = ? WHERE id = ?`,
-  ).run(displayNameStored, avatarStored, addressStored, printersJson, auth.userId);
+  await userUpdateProfileFields({
+    userId: auth.userId,
+    displayName: displayNameStored,
+    avatarUrl: avatarStored,
+    address: addressStored,
+    printersJson,
+  });
 
-  const row = db
-    .prepare(
-      "SELECT email, display_name, avatar_url, address, printers_json FROM users WHERE id = ?",
-    )
-    .get(auth.userId) as {
-      email: string;
-      display_name: string | null;
-      avatar_url: string | null;
-      address: string | null;
-      printers_json: string | null;
-    };
+  const row = await userGetProfileRow(auth.userId);
+
+  if (!row) {
+    return NextResponse.json({ error: "User not found" }, { status: 404 });
+  }
 
   return NextResponse.json({
     ok: true,

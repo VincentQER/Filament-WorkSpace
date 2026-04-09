@@ -37,6 +37,12 @@ export default function HomePage() {
               Handbook
             </a>
             <Link
+              href="/workshop"
+              className="hidden rounded-lg px-3 py-2 text-zinc-400 transition hover:bg-white/5 hover:text-zinc-100 sm:inline"
+            >
+              Workshop
+            </Link>
+            <Link
               href="/auth/login"
               className="rounded-lg px-3 py-2 text-zinc-300 transition hover:bg-white/5 hover:text-white"
             >
@@ -61,9 +67,13 @@ export default function HomePage() {
             Your filament, organized like a pro
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-zinc-400">
-            This page is your <strong className="font-medium text-zinc-200">handbook</strong> — learn what the app does.
-            When you are ready for <strong className="font-medium text-zinc-200">your own inventory and dashboard</strong>,
-            register an account and sign in. Your data stays tied to your login.
+            Explore the <strong className="font-medium text-zinc-200">handbook</strong> and{" "}
+            <Link href="/workshop" className="font-medium text-emerald-400/90 underline-offset-2 hover:underline">
+              recommended workshop picks
+            </Link>{" "}
+            without an account. When you want{" "}
+            <strong className="font-medium text-zinc-200">your own Bambu Lab stock dashboard</strong>, create an account
+            — you can start tracking immediately after sign-up.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
             <Link
@@ -93,17 +103,17 @@ export default function HomePage() {
               {
                 step: "01",
                 title: "Create an account",
-                body: "Register with email and password. We store your inventory per user so it is yours alone.",
+                body: "Register with email and password. You are signed in right away—no email verification step for this MVP.",
               },
               {
                 step: "02",
-                title: "Sign in",
-                body: "Use the same credentials on any device. A secure session keeps you logged in.",
+                title: "Sign in anytime",
+                body: "Use the same credentials on any device. A secure session cookie keeps you logged in.",
               },
               {
                 step: "03",
-                title: "Open your dashboard",
-                body: "Track colors, stock, wishlist, and locations — with optional simple mode for faster daily use.",
+                title: "Track your filament",
+                body: "Log Bambu Lab colors, spools, refills, and open weight in your personal inventory workspace.",
               },
             ].map((card) => (
               <article
@@ -150,17 +160,46 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="mt-24 rounded-3xl border border-emerald-500/20 bg-emerald-950/20 p-8 sm:p-10">
+          <h2 className="text-center text-xl font-semibold text-zinc-50 sm:text-2xl">Recommended gear</h2>
+          <p className="mx-auto mt-3 max-w-xl text-center text-sm text-zinc-400">
+            Curated tools and supplies with disclosure-backed affiliate links. No account required to browse.
+          </p>
+          <div className="mt-8 flex justify-center">
+            <Link
+              href="/workshop"
+              className="rounded-xl bg-emerald-500/90 px-6 py-3 text-sm font-semibold text-zinc-950 shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-400"
+            >
+              Open Workshop →
+            </Link>
+          </div>
+        </section>
+
         <p className="mt-16 text-center text-sm text-zinc-600">
-          After login, open{" "}
+          After you sign in, open{" "}
           <Link href="/my-inventory" className="text-emerald-400/90 underline underline-offset-2 hover:text-emerald-300">
             My inventory
-          </Link>
-          — bookmark it once you are signed in (you will be asked to sign in if needed).
+          </Link>{" "}
+          for your dashboard (or you will be redirected to sign in from that link).
         </p>
       </main>
 
-      <footer className="relative z-10 border-t border-white/5 py-8 text-center text-xs text-zinc-600">
-        Bambu Filament Inventory · Local + server sync
+      <footer className="relative z-10 border-t border-white/5 px-4 py-8 text-center text-xs text-zinc-600">
+        <p>Bambu Filament Inventory · Personal workspace</p>
+        <nav className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+          <Link href="/privacy" className="hover:text-zinc-400">
+            Privacy
+          </Link>
+          <Link href="/terms" className="hover:text-zinc-400">
+            Terms
+          </Link>
+          <Link href="/affiliate-disclosure" className="hover:text-zinc-400">
+            Affiliate disclosure
+          </Link>
+          <Link href="/workshop" className="hover:text-zinc-400">
+            Workshop
+          </Link>
+        </nav>
       </footer>
     </div>
   );

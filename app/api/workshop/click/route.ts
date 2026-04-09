@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import db from "@/lib/db";
 import { readAuthFromCookie } from "@/lib/auth";
+import { workshopRecordClick } from "@/lib/repos/workshop";
 
 type ClickPayload = {
   productId?: string;
@@ -33,19 +33,14 @@ export async function POST(req: NextRequest) {
   const auth = await readAuthFromCookie();
   const userId = auth?.userId ?? null;
 
-  db.prepare(`
-    INSERT INTO workshop_click_events
-      (user_id, product_id, asin, category, relevant, source_page)
-    VALUES
-      (?, ?, ?, ?, ?, ?)
-  `).run(
+  await workshopRecordClick({
     userId,
     productId,
     asin,
     category,
-    body.relevant ? 1 : 0,
+    relevant: Boolean(body.relevant),
     sourcePage,
-  );
+  });
 
   return NextResponse.json({ ok: true });
 }

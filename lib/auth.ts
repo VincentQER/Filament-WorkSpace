@@ -1,15 +1,30 @@
 import { SignJWT, jwtVerify } from "jose";
 import { cookies } from "next/headers";
+import { AUTH_COOKIE_NAME } from "@/lib/auth-cookie-name";
 
-const COOKIE_NAME = "inventory_auth";
-const SECRET = new TextEncoder().encode(process.env.AUTH_SECRET || "dev-insecure-secret-change-me");
+const COOKIE_NAME = AUTH_COOKIE_NAME;
+
+const DEV_FALLBACK = "dev-insecure-secret-change-me";
+
+function authSecretKey(): Uint8Array {
+  const s = process.env.AUTH_SECRET?.trim();
+  if (process.env.NODE_ENV === "production") {
+    if (!s || s === DEV_FALLBACK) {
+      throw new Error(
+        "AUTH_SECRET must be set to a long random string in production (Vercel Environment Variables).",
+      );
+    }
+    return new TextEncoder().encode(s);
+  }
+  return new TextEncoder().encode(s || DEV_FALLBACK);
+}
 
 export async function createAuthToken(userId: number, email: string) {
   return await new SignJWT({ userId, email })
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
     .setExpirationTime("30d")
-    .sign(SECRET);
+    .sign(authSecretKey());
 }
 
 export async function readAuthFromCookie() {
@@ -17,7 +32,7 @@ export async function readAuthFromCookie() {
   const token = jar.get(COOKIE_NAME)?.value;
   if (!token) return null;
   try {
-    const { payload } = await jwtVerify(token, SECRET);
+    const { payload } = await jwtVerify(token, authSecretKey());
     return {
       userId: Number(payload.userId),
       email: String(payload.email),

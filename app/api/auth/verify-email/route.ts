@@ -1,5 +1,8 @@
 import { NextResponse } from "next/server";
-import db from "@/lib/db";
+import {
+  userFindVerificationPendingByToken,
+  userMarkEmailVerified,
+} from "@/lib/repos/users";
 
 function redirect(request: Request, query: string) {
   const base = new URL(request.url).origin;
@@ -10,11 +13,7 @@ export async function GET(request: Request) {
   const token = new URL(request.url).searchParams.get("token")?.trim();
   if (!token) return redirect(request, "verify=invalid");
 
-  const row = db
-    .prepare(
-      "SELECT id, verification_expires_at FROM users WHERE verification_token = ? AND COALESCE(email_verified, 0) = 0",
-    )
-    .get(token) as { id: number; verification_expires_at: string | null } | undefined;
+  const row = await userFindVerificationPendingByToken(token);
 
   if (!row) return redirect(request, "verify=invalid");
 
@@ -23,9 +22,7 @@ export async function GET(request: Request) {
     return redirect(request, "verify=expired");
   }
 
-  db.prepare(
-    "UPDATE users SET email_verified = 1, verification_token = NULL, verification_expires_at = NULL WHERE id = ?",
-  ).run(row.id);
+  await userMarkEmailVerified(row.id);
 
   return redirect(request, "verified=1");
 }

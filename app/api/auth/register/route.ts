@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
-import db from "@/lib/db";
-import { sendVerificationEmail } from "@/lib/email";
-import { newVerificationToken, verificationExpiryIso } from "@/lib/verification";
+import { createAuthToken, setAuthCookie } from "@/lib/auth";
+import { userCreateActiveAccount, userFindExistingIdByEmail } from "@/lib/repos/users";
 
 export async function POST(request: Request) {
   const body = (await request.json()) as { email?: string; password?: string };
@@ -16,41 +15,14 @@ export async function POST(request: Request) {
     );
   }
 
-  const existing = db.prepare("SELECT id FROM users WHERE email = ?").get(email) as { id: number } | undefined;
+  const existing = await userFindExistingIdByEmail(email);
   if (existing) return NextResponse.json({ error: "That email is already registered." }, { status: 409 });
 
   const hash = await bcrypt.hash(password, 10);
-  const token = newVerificationToken();
-  const expires = verificationExpiryIso(48);
+  const userId = await userCreateActiveAccount({ email, password_hash: hash });
 
-  const result = db
-    .prepare(
-      `INSERT INTO users (email, password_hash, email_verified, verification_token, verification_expires_at)
-       VALUES (?, ?, 0, ?, ?)`,
-    )
-    .run(email, hash, token, expires);
+  const token = await createAuthToken(userId, email);
+  await setAuthCookie(token);
 
-  const userId = Number(result.lastInsertRowid);
-
-  const origin = new URL(request.url).origin;
-  const verifyUrl = `${origin}/api/auth/verify-email?token=${encodeURIComponent(token)}`;
-
-  const sent = await sendVerificationEmail({ to: email, verifyUrl });
-  if (!sent.ok) {
-    db.prepare("DELETE FROM users WHERE id = ?").run(userId);
-    return NextResponse.json({ error: sent.error }, { status: 500 });
-  }
-
-  const payload: {
-    ok: true;
-    needsVerification: true;
-    email: string;
-    devVerificationUrl?: string;
-  } = { ok: true, needsVerification: true, email };
-
-  if (sent.devLogged && process.env.NODE_ENV === "development") {
-    payload.devVerificationUrl = verifyUrl;
-  }
-
-  return NextResponse.json(payload);
+  return NextResponse.json({ ok: true, email });
 }

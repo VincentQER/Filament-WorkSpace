@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Filament workspace (inventory + workshop)
 
-## Getting Started
+Next.js app: Bambu Lab filament inventory, Amazon affiliate **Workshop** picks, auth, and optional Postgres for production.
 
-First, run the development server:
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Data defaults to **SQLite** at `data/app.db` (created on first run). The file is gitignored; do not commit real user data.
+- Copy `.env.example` to `.env.local` if you need SMTP or a fixed `AUTH_SECRET` locally.
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Create a **Postgres** database (e.g. [Neon](https://neon.tech) or [Supabase](https://supabase.com)) and copy the connection string.
+2. In the Vercel project → **Settings → Environment Variables**, set at least:
+   - `AUTH_SECRET` — long random string (e.g. `openssl rand -base64 32`).
+   - `DATABASE_URL` — Postgres URL (required so inventory and users persist; serverless filesystem is not safe for SQLite).
+   - Optional but needed for email verification in production: `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM` (see `.env.example`).
+3. Remove any placeholder keys (e.g. `EXAMPLE_NAME`) and deploy from the repo root (framework: **Next.js**, root `./`).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If `DATABASE_URL` is **not** set, the app still uses SQLite — fine for your machine, **not** for Vercel production.
+
+## Scripts
+
+| Script | Purpose |
+|--------|---------|
+| `npm run sync:catalog` | Regenerate search catalog JSON |
+| `npm run sync:bambu-images` | Fill `previewUrl` in Bambu colors from store HTML |
+| `npm run sync:sunlu` | SUNLU colors from Shopify (if used) |
+
+## Learn More
+
+To learn more about Next.js, take a look at the [Next.js Documentation](https://nextjs.org/docs).
