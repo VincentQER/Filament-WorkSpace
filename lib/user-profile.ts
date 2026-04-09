@@ -6,6 +6,8 @@ export type PublicUserProfile = {
   avatarUrl: string;
   address: string;
   printers: string[];
+  /** True when the user's DB role is "admin". Used to show the Admin nav link. */
+  isAdmin: boolean;
 };
 
 export function parsePrintersJson(raw: string | null | undefined): string[] {
@@ -54,6 +56,7 @@ export function rowToPublicProfile(
     avatar_url: string | null;
     address: string | null;
     printers_json: string | null;
+    role?: string | null;
   },
   userId: number,
   fallbackEmail: string,
@@ -66,5 +69,6 @@ export function rowToPublicProfile(
     avatarUrl: row.avatar_url?.trim() ?? "",
     address: row.address?.trim() ?? "",
     printers: parsePrintersJson(row.printers_json),
+    isAdmin: row.role === "admin",
   };
 }

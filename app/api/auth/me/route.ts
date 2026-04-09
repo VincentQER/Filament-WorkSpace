@@ -1,13 +1,17 @@
 import { NextResponse } from "next/server";
 import { readAuthFromCookie } from "@/lib/auth";
 import { rowToPublicProfile } from "@/lib/user-profile";
-import { userGetProfileRow } from "@/lib/repos/users";
+import { userGetProfileRow, userGetRole } from "@/lib/repos/users";
 
 export async function GET() {
   const auth = await readAuthFromCookie();
   if (!auth) return NextResponse.json({ authenticated: false }, { status: 401 });
 
-  const row = await userGetProfileRow(auth.userId);
+  // Fetch profile and role in parallel — role is needed for isAdmin on the client.
+  const [row, role] = await Promise.all([
+    userGetProfileRow(auth.userId),
+    userGetRole(auth.userId),
+  ]);
 
   if (!row) {
     return NextResponse.json({
@@ -19,6 +23,7 @@ export async function GET() {
           avatar_url: null,
           address: null,
           printers_json: null,
+          role,
         },
         auth.userId,
         auth.email,
@@ -28,6 +33,6 @@ export async function GET() {
 
   return NextResponse.json({
     authenticated: true,
-    user: rowToPublicProfile(row, auth.userId, auth.email),
+    user: rowToPublicProfile({ ...row, role }, auth.userId, auth.email),
   });
 }
