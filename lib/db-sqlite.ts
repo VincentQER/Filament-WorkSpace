@@ -1,7 +1,13 @@
 import Database from "better-sqlite3";
 import path from "node:path";
+import { getDatabaseUrl } from "./db-config";
 
 function createDatabase(): Database.Database {
+  if (process.env["VERCEL"] === "1" && !getDatabaseUrl()) {
+    throw new Error(
+      "Set DATABASE_URL (Neon connection string) in Vercel → Settings → Environment Variables, then Redeploy. SQLite does not work on Vercel.",
+    );
+  }
   const dbPath = path.join(process.cwd(), "data", "app.db");
   const db = new Database(dbPath);
 

@@ -1,11 +1,12 @@
 import { Pool, type PoolClient } from "pg";
+import { getDatabaseUrl } from "./db-config";
 
 let pool: Pool | null = null;
 let migrated = false;
 
 export function getPool(): Pool {
-  const url = process.env.DATABASE_URL?.trim();
-  if (!url) throw new Error("DATABASE_URL is not set.");
+  const url = getDatabaseUrl();
+  if (!url) throw new Error("DATABASE_URL or POSTGRES_URL is not set.");
   if (!pool) {
     pool = new Pool({
       connectionString: url,
@@ -13,7 +14,7 @@ export function getPool(): Pool {
       idleTimeoutMillis: 20_000,
       connectionTimeoutMillis: 15_000,
       ssl:
-        process.env.PGSSLMODE === "disable"
+        process.env["PGSSLMODE"] === "disable"
           ? undefined
           : { rejectUnauthorized: false },
     });
