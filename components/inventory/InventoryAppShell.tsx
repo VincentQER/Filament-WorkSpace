@@ -264,6 +264,24 @@ export function InventoryAppShell({ children }: { children: React.ReactNode }) {
                   </Link>
                 );
               })}
+
+              {user.isAdmin && (
+                <>
+                  <div className="my-2 border-t border-white/[0.06]" />
+                  <Link
+                    href="/admin/products"
+                    onClick={() => setSidebarOpen(false)}
+                    className={`flex flex-col rounded-xl border px-3 py-2.5 transition ${
+                      pathname.startsWith("/admin")
+                        ? "border-amber-500/30 bg-amber-500/10 text-white"
+                        : "border-transparent text-zinc-500 hover:border-white/10 hover:bg-white/[0.04] hover:text-zinc-300"
+                    }`}
+                  >
+                    <span className="text-sm font-medium">⚙ Admin</span>
+                    <span className="text-[11px] text-zinc-600">Manage affiliate products</span>
+                  </Link>
+                </>
+              )}
             </nav>
 
             {stats ? (
