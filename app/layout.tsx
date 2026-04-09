@@ -27,7 +27,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        {children}
+        <footer className="mt-auto border-t border-white/[0.05] px-4 py-3 text-center text-[11px] text-zinc-600">
+          As an Amazon Associate we earn from qualifying purchases.
+        </footer>
+      </body>
     </html>
   );
 }

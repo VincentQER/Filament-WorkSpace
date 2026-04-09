@@ -193,6 +193,52 @@ CREATE TABLE IF NOT EXISTS schema_migrations (
         ON workshop_click_events (product_id, created_at);
     `,
     },
+    // v5 — role-based access control
+    {
+      version: 5,
+      up() {
+        const cols = new Set(
+          (db.prepare("PRAGMA table_info(users)").all() as { name: string }[]).map(
+            (c) => c.name,
+          ),
+        );
+        if (!cols.has("role")) {
+          db.exec(`ALTER TABLE users ADD COLUMN role TEXT NOT NULL DEFAULT 'user'`);
+        }
+        // Bootstrap: promote ADMIN_EMAIL to admin if the env var is set.
+        const adminEmail = process.env["ADMIN_EMAIL"]?.trim().toLowerCase();
+        if (adminEmail) {
+          db.prepare(`UPDATE users SET role = 'admin' WHERE lower(email) = ?`).run(adminEmail);
+          console.log(`[db] Bootstrapped admin role for ${adminEmail}`);
+        }
+      },
+    },
+    // v6 — DB-backed affiliate products
+    {
+      version: 6,
+      up: `
+      CREATE TABLE IF NOT EXISTS affiliate_products (
+        id            INTEGER PRIMARY KEY AUTOINCREMENT,
+        title         TEXT    NOT NULL,
+        description   TEXT    NOT NULL DEFAULT '',
+        image_url     TEXT    NOT NULL DEFAULT '',
+        amazon_url    TEXT    NOT NULL,
+        asin          TEXT    NOT NULL DEFAULT '',
+        category      TEXT    NOT NULL DEFAULT 'essential',
+        brand         TEXT    NOT NULL DEFAULT '',
+        material_type TEXT    NOT NULL DEFAULT '',
+        highlights    TEXT    NOT NULL DEFAULT '',
+        price_range   TEXT    NOT NULL DEFAULT '',
+        is_active     INTEGER NOT NULL DEFAULT 1,
+        sort_order    INTEGER NOT NULL DEFAULT 0,
+        created_at    TEXT    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        updated_at    TEXT    NOT NULL DEFAULT CURRENT_TIMESTAMP
+      );
+
+      CREATE INDEX IF NOT EXISTS idx_affiliate_products_active_sort
+        ON affiliate_products (is_active, sort_order);
+    `,
+    },
   ];
 
   const applied = new Set(

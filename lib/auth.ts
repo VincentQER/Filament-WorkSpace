@@ -1,6 +1,31 @@
 import { SignJWT, jwtVerify } from "jose";
 import { cookies } from "next/headers";
 import { AUTH_COOKIE_NAME } from "@/lib/auth-cookie-name";
+import { userGetRole } from "@/lib/repos/users";
+
+/** Thrown by requireAdmin() when the caller is not an authenticated admin. */
+export class AdminAuthError extends Error {
+  constructor(public readonly status: 401 | 403) {
+    super(status === 401 ? "Not authenticated" : "Forbidden: admin only");
+  }
+}
+
+/**
+ * Server-side guard for admin routes and pages.
+ * Reads the JWT from the cookie, verifies it, then checks the user's role
+ * live from the database (never from the token, so role changes take effect immediately).
+ *
+ * Throws AdminAuthError(401) if not logged in.
+ * Throws AdminAuthError(403) if logged in but not an admin.
+ * Returns userId on success.
+ */
+export async function requireAdmin(): Promise<number> {
+  const auth = await readAuthFromCookie();
+  if (!auth) throw new AdminAuthError(401);
+  const role = await userGetRole(auth.userId);
+  if (role !== "admin") throw new AdminAuthError(403);
+  return auth.userId;
+}
 
 const COOKIE_NAME = AUTH_COOKIE_NAME;
 

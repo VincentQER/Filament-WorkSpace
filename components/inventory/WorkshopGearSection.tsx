@@ -6,14 +6,68 @@ import {
   WORKSHOP_PRODUCTS,
   WORKSHOP_CATEGORIES,
   type ProductTag,
+  type WorkshopProduct,
 } from "@/data/workshop-products";
 import { WorkshopProductCard } from "@/components/inventory/WorkshopProductCard";
 import { type Item, normalizeItem } from "@/lib/inventory-item";
+import type { AffiliateProductRow } from "@/lib/repos/affiliate-products";
+
+/** Convert a DB row to the WorkshopProduct shape the existing card component expects. */
+function rowToProduct(row: AffiliateProductRow): WorkshopProduct {
+  // material_type is stored as a comma-separated string, e.g. "PLA,PETG"
+  const relevantMaterials = row.material_type
+    ? row.material_type.split(",").map((s) => s.trim()).filter(Boolean)
+    : undefined;
+  return {
+    id:               String(row.id),
+    name:             row.title,
+    brand:            row.brand,
+    asin:             row.asin,
+    tagline:          row.description,
+    whyItMatters:     row.highlights,
+    priceRange:       row.price_range,
+    category:         row.category as ProductTag,
+    relevantMaterials,
+    // If image_url is an Amazon CDN URL, extract the imageId so the card can
+    // also build its own URL. Otherwise just store the full URL in imageId
+    // and let the card render it directly (card already does: src={amazonImageUrl(imageId)}
+    // when imageId is set, but we override via a custom property below).
+    imageId:          row.image_url || undefined,
+  };
+}
 
 export function WorkshopGearSection() {
   const [activeCategory, setActiveCategory] = useState<ProductTag | "all">("all");
   const [userMaterials, setUserMaterials] = useState<Set<string>>(new Set());
+  const [products, setProducts] = useState<WorkshopProduct[]>([]);
+  const [productsLoaded, setProductsLoaded] = useState(false);
 
+  // Load products from DB; fall back to hardcoded list if DB returns empty
+  useEffect(() => {
+    void (async () => {
+      try {
+        const res = await fetch("/api/workshop/products");
+        if (res.ok) {
+          const data = (await res.json()) as {
+            products: AffiliateProductRow[];
+            source: string;
+          };
+          if (Array.isArray(data.products) && data.products.length > 0) {
+            setProducts(data.products.map(rowToProduct));
+            setProductsLoaded(true);
+            return;
+          }
+        }
+      } catch {
+        // network error — fall through to hardcoded
+      }
+      // Fallback: use the hardcoded list from data/workshop-products.ts
+      setProducts(WORKSHOP_PRODUCTS);
+      setProductsLoaded(true);
+    })();
+  }, []);
+
+  // Load user's inventory for personalisation
   useEffect(() => {
     void (async () => {
       const res = await fetch("/api/inventory");
@@ -25,13 +79,13 @@ export function WorkshopGearSection() {
     })();
   }, []);
 
-  const isRelevant = (product: (typeof WORKSHOP_PRODUCTS)[0]) =>
+  const isRelevant = (product: WorkshopProduct) =>
     product.relevantMaterials?.some((m) => userMaterials.has(m)) ?? false;
 
   const filtered =
     activeCategory === "all"
-      ? WORKSHOP_PRODUCTS
-      : WORKSHOP_PRODUCTS.filter((p) => p.category === activeCategory);
+      ? products
+      : products.filter((p) => p.category === activeCategory);
 
   const sorted = [...filtered].sort((a, b) => {
     const ra = isRelevant(a) ? 0 : 1;
@@ -39,7 +93,7 @@ export function WorkshopGearSection() {
     return ra - rb;
   });
 
-  const relevantCount = WORKSHOP_PRODUCTS.filter(isRelevant).length;
+  const relevantCount = products.filter(isRelevant).length;
 
   return (
     <div className="space-y-8">
@@ -48,13 +102,6 @@ export function WorkshopGearSection() {
         <p className="mt-1 text-sm text-zinc-400">
           Curated 3D printing tools and supplies — tested by the community.
         </p>
-        {AMAZON_TAG === "YOUR_TAG-20" && (
-          <p className="mt-2 rounded-xl border border-amber-500/25 bg-amber-950/20 px-4 py-2 text-[11px] text-amber-300">
-            Affiliate tag is not configured. Update <code>AMAZON_TAG</code> in
-            <code> data/workshop-products.ts</code> before launch.
-          </p>
-        )}
-
         <p className="mt-3 rounded-xl border border-white/[0.06] bg-zinc-900/60 px-4 py-2.5 text-[11px] leading-relaxed text-zinc-500">
           <span className="font-semibold text-zinc-400">Disclosure:</span> Links on this page are Amazon
           affiliate links. If you purchase through them, we earn a small commission at no extra cost to you.
@@ -105,11 +152,19 @@ export function WorkshopGearSection() {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {sorted.map((product) => (
-          <WorkshopProductCard key={product.id} product={product} relevant={isRelevant(product)} />
-        ))}
-      </div>
+      {!productsLoaded ? (
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[...Array(6)].map((_, i) => (
+            <div key={i} className="h-64 animate-pulse rounded-2xl bg-zinc-800/40" />
+          ))}
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {sorted.map((product) => (
+            <WorkshopProductCard key={product.id} product={product} relevant={isRelevant(product)} />
+          ))}
+        </div>
+      )}
 
       <p className="text-center text-[11px] text-zinc-600">
         Prices are approximate and may vary. Always verify on Amazon before purchasing.

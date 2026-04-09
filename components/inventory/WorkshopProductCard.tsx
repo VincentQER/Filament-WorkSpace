@@ -1,6 +1,6 @@
 "use client";
 
-import { type WorkshopProduct, amazonUrl } from "@/data/workshop-products";
+import { type WorkshopProduct, amazonUrl, amazonImageUrl } from "@/data/workshop-products";
 
 type Props = {
   product: WorkshopProduct;
@@ -8,8 +8,31 @@ type Props = {
   relevant?: boolean;
 };
 
+/** Category icon fallback when no imageId is available */
+const CATEGORY_ICONS: Record<string, string> = {
+  essential: "🔧",
+  storage: "📦",
+  filament: "🎨",
+  "post-processing": "✨",
+  printers: "🖨️",
+};
+
+/**
+ * Resolve the display image URL for a product.
+ *
+ * - DB products store the full URL in imageId (see rowToProduct in WorkshopGearSection).
+ * - Hardcoded Phase-1 products store a bare Amazon image hash (e.g. "41W4+oUpeNL").
+ *   We detect the difference by whether the value starts with "http".
+ */
+function resolveImageUrl(imageId: string | undefined): string | null {
+  if (!imageId) return null;
+  if (imageId.startsWith("http")) return imageId;       // full URL (DB product)
+  return amazonImageUrl(imageId);                        // bare hash (hardcoded product)
+}
+
 export function WorkshopProductCard({ product, relevant = false }: Props) {
   const href = amazonUrl(product.asin);
+  const imageUrl = resolveImageUrl(product.imageId);
 
   function trackAffiliateClick() {
     const payload = {
@@ -24,11 +47,11 @@ export function WorkshopProductCard({ product, relevant = false }: Props) {
     // sendBeacon is preferred so navigation is not blocked by analytics.
     if (typeof navigator !== "undefined" && typeof navigator.sendBeacon === "function") {
       const blob = new Blob([body], { type: "application/json" });
-      navigator.sendBeacon("/api/workshop/click", blob);
+      navigator.sendBeacon("/api/affiliate-click", blob);
       return;
     }
 
-    void fetch("/api/workshop/click", {
+    void fetch("/api/affiliate-click", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body,
@@ -48,27 +71,46 @@ export function WorkshopProductCard({ product, relevant = false }: Props) {
           : "border-white/[0.07] bg-zinc-900/60 hover:border-white/15"
       }`}
     >
-      {/* Top strip */}
-      <div className="flex items-start justify-between gap-2 px-4 pt-4">
-        <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
-          {product.brand}
-        </span>
-        <div className="flex items-center gap-1.5 shrink-0">
+      {/* Product image or icon placeholder */}
+      <div className="relative flex h-36 w-full items-center justify-center overflow-hidden rounded-t-2xl bg-white/[0.03]">
+        {imageUrl ? (
+          <img
+            src={imageUrl}
+            alt={product.name}
+            width={160}
+            height={160}
+            className="h-32 w-32 object-contain transition-transform duration-150 group-hover:scale-105"
+            loading="lazy"
+          />
+        ) : (
+          <span className="text-5xl opacity-30">
+            {CATEGORY_ICONS[product.category] ?? "📦"}
+          </span>
+        )}
+        {/* Badge overlay */}
+        <div className="absolute right-2 top-2 flex flex-col items-end gap-1">
           {relevant && (
-            <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-semibold text-emerald-400">
+            <span className="rounded-full bg-emerald-500/20 px-2 py-0.5 text-[10px] font-semibold text-emerald-400 backdrop-blur-sm">
               Matches your inventory
             </span>
           )}
           {product.badge && !relevant && (
-            <span className="rounded-full bg-amber-500/15 px-2 py-0.5 text-[10px] font-semibold text-amber-400">
+            <span className="rounded-full bg-amber-500/20 px-2 py-0.5 text-[10px] font-semibold text-amber-400 backdrop-blur-sm">
               {product.badge}
             </span>
           )}
         </div>
       </div>
 
+      {/* Top strip */}
+      <div className="px-4 pt-3">
+        <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
+          {product.brand}
+        </span>
+      </div>
+
       {/* Body */}
-      <div className="flex flex-1 flex-col gap-2 px-4 py-3">
+      <div className="flex flex-1 flex-col gap-2 px-4 py-2">
         <p className="text-sm font-semibold leading-snug text-zinc-100 group-hover:text-white">
           {product.name}
         </p>

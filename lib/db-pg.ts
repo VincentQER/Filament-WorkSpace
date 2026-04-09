@@ -195,6 +195,51 @@ export async function ensurePostgresMigrated(): Promise<void> {
         );
       },
     },
+    // v5 — role-based access control
+    {
+      version: 5,
+      async up(client) {
+        await client.query(
+          `ALTER TABLE users ADD COLUMN IF NOT EXISTS role TEXT NOT NULL DEFAULT 'user'`,
+        );
+        // Bootstrap: promote ADMIN_EMAIL to admin if the env var is set.
+        const adminEmail = process.env["ADMIN_EMAIL"]?.trim().toLowerCase();
+        if (adminEmail) {
+          await client.query(
+            `UPDATE users SET role = 'admin' WHERE lower(email) = $1`,
+            [adminEmail],
+          );
+          console.log(`[db-pg] Bootstrapped admin role for ${adminEmail}`);
+        }
+      },
+    },
+    // v6 — DB-backed affiliate products
+    {
+      version: 6,
+      async up(client) {
+        await client.query(`
+          CREATE TABLE IF NOT EXISTS affiliate_products (
+            id          BIGSERIAL PRIMARY KEY,
+            title       TEXT NOT NULL,
+            description TEXT NOT NULL DEFAULT '',
+            image_url   TEXT NOT NULL DEFAULT '',
+            amazon_url  TEXT NOT NULL,
+            asin        TEXT NOT NULL DEFAULT '',
+            category    TEXT NOT NULL DEFAULT 'essential',
+            brand       TEXT NOT NULL DEFAULT '',
+            material_type TEXT NOT NULL DEFAULT '',
+            highlights  TEXT NOT NULL DEFAULT '',
+            price_range TEXT NOT NULL DEFAULT '',
+            is_active   INTEGER NOT NULL DEFAULT 1,
+            sort_order  INTEGER NOT NULL DEFAULT 0,
+            created_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+            updated_at  TIMESTAMPTZ NOT NULL DEFAULT NOW()
+          )`);
+        await client.query(
+          `CREATE INDEX IF NOT EXISTS idx_affiliate_products_active_sort ON affiliate_products (is_active, sort_order)`,
+        );
+      },
+    },
   ];
 
   for (const m of migrations) {

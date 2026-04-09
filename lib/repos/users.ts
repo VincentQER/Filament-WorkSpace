@@ -230,6 +230,22 @@ export async function userFindForResend(email: string): Promise<{
     | undefined;
 }
 
+export async function userGetRole(userId: number): Promise<string> {
+  if (isPostgres()) {
+    await ensurePostgresMigrated();
+    const r = await getPool().query<{ role: string }>(
+      `SELECT COALESCE(role, 'user') AS role FROM users WHERE id = $1`,
+      [userId],
+    );
+    return r.rows[0]?.role ?? "user";
+  }
+  const db = await getSqlite();
+  const row = db
+    .prepare(`SELECT COALESCE(role, 'user') AS role FROM users WHERE id = ?`)
+    .get(userId) as { role: string } | undefined;
+  return row?.role ?? "user";
+}
+
 export async function userSetVerificationToken(id: number, token: string, expires: string): Promise<void> {
   if (isPostgres()) {
     await ensurePostgresMigrated();
