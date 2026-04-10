@@ -27,6 +27,12 @@ export type WorkshopProduct = {
   name: string;
   brand: string;
   asin: string;
+  /**
+   * When set, this URL is used directly as the product link (overrides amazonUrl(asin)).
+   * DB products always populate this from affiliate_products.amazon_url so short links
+   * like amzn.to/... and full affiliate URLs work even when ASIN is empty.
+   */
+  directUrl?: string;
   /** Amazon CDN image ID  e.g. "41W4+oUpeNL"  →  use amazonImageUrl() to build the full URL */
   imageId?: string;
   tagline: string;

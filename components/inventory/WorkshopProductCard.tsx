@@ -31,7 +31,9 @@ function resolveImageUrl(imageId: string | undefined): string | null {
 }
 
 export function WorkshopProductCard({ product, relevant = false }: Props) {
-  const href = amazonUrl(product.asin);
+  // Prefer the stored direct URL (covers amzn.to short links and cases where
+  // ASIN was left blank in the admin form). Fall back to building from ASIN.
+  const href = product.directUrl ?? amazonUrl(product.asin);
   const imageUrl = resolveImageUrl(product.imageId);
 
   function trackAffiliateClick() {

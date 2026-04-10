@@ -23,15 +23,14 @@ function rowToProduct(row: AffiliateProductRow): WorkshopProduct {
     name:             row.title,
     brand:            row.brand,
     asin:             row.asin,
+    // Always use the stored amazon_url directly — covers short links (amzn.to/...),
+    // full affiliate URLs, and cases where ASIN was left blank in the admin form.
+    directUrl:        row.amazon_url || undefined,
     tagline:          row.description,
     whyItMatters:     row.highlights,
     priceRange:       row.price_range,
     category:         row.category as ProductTag,
     relevantMaterials,
-    // If image_url is an Amazon CDN URL, extract the imageId so the card can
-    // also build its own URL. Otherwise just store the full URL in imageId
-    // and let the card render it directly (card already does: src={amazonImageUrl(imageId)}
-    // when imageId is set, but we override via a custom property below).
     imageId:          row.image_url || undefined,
   };
 }
