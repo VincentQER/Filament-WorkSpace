@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import {
-  AMAZON_TAG,
   WORKSHOP_PRODUCTS,
   WORKSHOP_CATEGORIES,
   type ProductTag,
@@ -11,38 +10,23 @@ import {
 import { WorkshopProductCard } from "@/components/inventory/WorkshopProductCard";
 import { type Item, normalizeItem } from "@/lib/inventory-item";
 import type { AffiliateProductRow } from "@/lib/repos/affiliate-products";
+import { rowToWorkshopProduct } from "@/lib/workshop-row-to-product";
 
-/** Convert a DB row to the WorkshopProduct shape the existing card component expects. */
-function rowToProduct(row: AffiliateProductRow): WorkshopProduct {
-  // material_type is stored as a comma-separated string, e.g. "PLA,PETG"
-  const relevantMaterials = row.material_type
-    ? row.material_type.split(",").map((s) => s.trim()).filter(Boolean)
-    : undefined;
-  return {
-    id:               String(row.id),
-    name:             row.title,
-    brand:            row.brand,
-    asin:             row.asin,
-    // Always use the stored amazon_url directly — covers short links (amzn.to/...),
-    // full affiliate URLs, and cases where ASIN was left blank in the admin form.
-    directUrl:        row.amazon_url || undefined,
-    tagline:          row.description,
-    whyItMatters:     row.highlights,
-    priceRange:       row.price_range,
-    category:         row.category as ProductTag,
-    relevantMaterials,
-    imageId:          row.image_url || undefined,
-  };
-}
+type Props = {
+  /** Pre-loaded products from the server. If provided, skips client-side fetch. */
+  initialProducts?: WorkshopProduct[];
+};
 
-export function WorkshopGearSection() {
+export function WorkshopGearSection({ initialProducts }: Props = {}) {
   const [activeCategory, setActiveCategory] = useState<ProductTag | "all">("all");
   const [userMaterials, setUserMaterials] = useState<Set<string>>(new Set());
-  const [products, setProducts] = useState<WorkshopProduct[]>([]);
-  const [productsLoaded, setProductsLoaded] = useState(false);
+  const [products, setProducts] = useState<WorkshopProduct[]>(initialProducts ?? []);
+  const [productsLoaded, setProductsLoaded] = useState(!!initialProducts);
 
-  // Load products from DB; fall back to hardcoded list if DB returns empty
+  // Load products from DB; fall back to hardcoded list if DB returns empty.
+  // Skip if products were pre-loaded by the server.
   useEffect(() => {
+    if (initialProducts) return; // already hydrated
     void (async () => {
       try {
         const res = await fetch("/api/workshop/products");
@@ -52,7 +36,7 @@ export function WorkshopGearSection() {
             source: string;
           };
           if (Array.isArray(data.products) && data.products.length > 0) {
-            setProducts(data.products.map(rowToProduct));
+            setProducts(data.products.map(rowToWorkshopProduct));
             setProductsLoaded(true);
             return;
           }
@@ -64,7 +48,7 @@ export function WorkshopGearSection() {
       setProducts(WORKSHOP_PRODUCTS);
       setProductsLoaded(true);
     })();
-  }, []);
+  }, [initialProducts]);
 
   // Load user's inventory for personalisation
   useEffect(() => {
