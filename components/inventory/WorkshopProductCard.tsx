@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { type WorkshopProduct, amazonUrl, amazonImageUrl } from "@/data/workshop-products";
+import { workshopProductPath } from "@/lib/workshop-slug";
 
 type Props = {
   product: WorkshopProduct;
@@ -149,6 +151,17 @@ export function WorkshopProductCard({ product, relevant = false }: Props) {
             <path d="M1.5 8.5 8.5 1.5M8.5 1.5H5M8.5 1.5V5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </span>
+      </div>
+
+      {/* Detail page link — stops propagation so it doesn't fire the parent <a> */}
+      <div className="px-4 pb-3 pt-0" onClick={(e) => e.stopPropagation()}>
+        <Link
+          href={workshopProductPath(product)}
+          className="block w-full rounded-lg border border-white/[0.06] py-1.5 text-center text-[10px] font-medium text-zinc-600 transition hover:border-white/10 hover:text-zinc-400"
+          onClick={(e) => e.stopPropagation()}
+        >
+          Read full review →
+        </Link>
       </div>
     </a>
   );
