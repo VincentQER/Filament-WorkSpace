@@ -58,7 +58,9 @@ type FormState = {
   material_type: string;
   highlights: string;
   price_range: string;
-  is_active: number;
+  original_price: string;
+  is_deal: number;   // 0 | 1
+  is_active: number; // 0 | 1
   sort_order: number;
 };
 
@@ -68,7 +70,8 @@ function blankForm(): FormState {
   return {
     title: "", description: "", image_url: "", amazon_url: "",
     asin: "", category: "essential", brand: "", material_type: "",
-    highlights: "", price_range: "", is_active: 1, sort_order: 0,
+    highlights: "", price_range: "", original_price: "",
+    is_deal: 0, is_active: 1, sort_order: 0,
   };
 }
 
@@ -77,7 +80,8 @@ function rowToForm(p: AffiliateProductRow): FormState {
     title: p.title, description: p.description, image_url: p.image_url,
     amazon_url: p.amazon_url, asin: p.asin, category: p.category,
     brand: p.brand, material_type: p.material_type, highlights: p.highlights,
-    price_range: p.price_range, is_active: p.is_active, sort_order: p.sort_order,
+    price_range: p.price_range, original_price: p.original_price ?? "",
+    is_deal: p.is_deal ?? 0, is_active: p.is_active, sort_order: p.sort_order,
   };
 }
 
@@ -192,8 +196,8 @@ export function AdminProductForm({ product }: Props) {
             />
           </div>
           <div>
-            <label className={labelCls}>Price range</label>
-            <p className={hintCls}>Shown on the product card.</p>
+            <label className={labelCls}>Current price</label>
+            <p className={hintCls}>Shown on the product card (e.g. <code className="text-zinc-400">$8–12</code> or <code className="text-zinc-400">$11.99</code>).</p>
             <input
               className={inp}
               value={form.price_range}
@@ -201,6 +205,42 @@ export function AdminProductForm({ product }: Props) {
               placeholder="e.g. $8–12"
             />
           </div>
+        </div>
+
+        {/* Deal section */}
+        <div className="rounded-xl border border-white/[0.06] bg-zinc-950/40 p-4 space-y-4">
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="text-xs font-semibold text-zinc-300">Mark as Deal 🔥</p>
+              <p className={hintCls + " mb-0"}>Shows a &ldquo;Deal&rdquo; badge and strikethrough original price on the card.</p>
+            </div>
+            {/* Deal toggle */}
+            <label className="relative flex cursor-pointer items-center">
+              <input
+                type="checkbox"
+                className="sr-only"
+                checked={form.is_deal === 1}
+                onChange={(e) => set("is_deal", e.target.checked ? 1 : 0)}
+              />
+              <div className={`h-5 w-9 rounded-full transition-colors ${form.is_deal ? "bg-amber-500" : "bg-zinc-700"}`} />
+              <div className={`absolute left-0.5 top-0.5 h-4 w-4 rounded-full bg-white shadow transition-transform ${form.is_deal ? "translate-x-4" : "translate-x-0"}`} />
+            </label>
+          </div>
+          {form.is_deal === 1 && (
+            <div>
+              <label className={labelCls}>Original price <span className="font-normal text-zinc-500">(before discount)</span></label>
+              <input
+                className={inp}
+                value={form.original_price}
+                onChange={(e) => set("original_price", e.target.value)}
+                placeholder="e.g. $19.99"
+              />
+              <p className="mt-1.5 text-[11px] text-amber-400/80">
+                Card will show: <span className="line-through text-zinc-500">{form.original_price || "$19.99"}</span>{" "}
+                <span className="text-amber-300">{form.price_range || "$11.99"}</span> 🔥 Deal
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Image URL */}
@@ -309,7 +349,7 @@ export function AdminProductForm({ product }: Props) {
             <span className="flex h-6 w-6 items-center justify-center rounded-full bg-zinc-700/60 text-[11px] font-bold text-zinc-400">3</span>
             <p className="text-sm font-semibold text-zinc-400">Optional details</p>
             <span className="rounded-full bg-zinc-800 px-2 py-0.5 text-[10px] text-zinc-500">
-              Description · Highlights
+              Description · Highlights · Review copy
             </span>
           </div>
           <span className="text-zinc-500 text-xs">{showOptional ? "▲ collapse" : "▼ expand"}</span>
@@ -318,13 +358,13 @@ export function AdminProductForm({ product }: Props) {
         {showOptional && (
           <div className="border-t border-white/[0.06] px-5 pb-5 pt-4 space-y-4">
             <div>
-              <label className={labelCls}>Description</label>
-              <p className={hintCls}>1–2 sentences shown on the product card below the title.</p>
+              <label className={labelCls}>Description <span className="font-normal text-zinc-500">— shown as italic quote on the card</span></label>
+              <p className={hintCls}>Write it like a personal recommendation, e.g. &ldquo;I use this every print — the blades stay sharp for years.&rdquo;</p>
               <textarea
                 className={`${inp} min-h-[72px] resize-y`}
                 value={form.description}
                 onChange={(e) => set("description", e.target.value)}
-                placeholder="Clean support removal without damaging your print surface."
+                placeholder="I use this every print — clean cuts every time and the blades last for years."
               />
             </div>
             <div>

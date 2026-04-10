@@ -77,18 +77,20 @@ export async function PATCH(request: Request, { params }: RouteContext) {
 
   // Full update path — merge with existing values so partial payloads work too
   const data: AffiliateProductInput = {
-    title:         body.title?.trim()         ?? existing.title,
-    description:   body.description?.trim()   ?? existing.description,
-    image_url:     body.image_url?.trim()     ?? existing.image_url,
-    amazon_url:    body.amazon_url?.trim()    ?? existing.amazon_url,
-    asin:          body.asin?.trim()          ?? existing.asin,
-    category:      body.category?.trim()      ?? existing.category,
-    brand:         body.brand?.trim()         ?? existing.brand,
-    material_type: body.material_type?.trim() ?? existing.material_type,
-    highlights:    body.highlights?.trim()    ?? existing.highlights,
-    price_range:   body.price_range?.trim()   ?? existing.price_range,
-    is_active:     body.is_active === 0 ? 0 : (body.is_active === 1 ? 1 : existing.is_active),
-    sort_order:    typeof body.sort_order === "number" ? body.sort_order : existing.sort_order,
+    title:          body.title?.trim()          ?? existing.title,
+    description:    body.description?.trim()    ?? existing.description,
+    image_url:      body.image_url?.trim()      ?? existing.image_url,
+    amazon_url:     body.amazon_url?.trim()     ?? existing.amazon_url,
+    asin:           body.asin?.trim()           ?? existing.asin,
+    category:       body.category?.trim()       ?? existing.category,
+    brand:          body.brand?.trim()          ?? existing.brand,
+    material_type:  body.material_type?.trim()  ?? existing.material_type,
+    highlights:     body.highlights?.trim()     ?? existing.highlights,
+    price_range:    body.price_range?.trim()    ?? existing.price_range,
+    original_price: body.original_price?.trim() ?? existing.original_price ?? "",
+    is_active:      body.is_active === 0 ? 0 : (body.is_active === 1 ? 1 : existing.is_active),
+    is_deal:        body.is_deal === 1 ? 1 : (body.is_deal === 0 ? 0 : (existing.is_deal ?? 0)),
+    sort_order:     typeof body.sort_order === "number" ? body.sort_order : existing.sort_order,
   };
 
   if (!data.title) return NextResponse.json({ error: "title is required" }, { status: 400 });

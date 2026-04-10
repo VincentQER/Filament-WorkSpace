@@ -16,8 +16,10 @@ export type AffiliateProductRow = {
   material_type: string;
   highlights: string;
   price_range: string;
-  is_active: number;   // 0 | 1  (SQLite stores booleans as integers)
+  is_active: number;        // 0 | 1
   sort_order: number;
+  is_deal: number;          // 0 | 1  — marks a current sale / special price
+  original_price: string;   // original / before-sale price, e.g. "$19.99"
   created_at: string;
   updated_at: string;
 };
@@ -35,6 +37,8 @@ export type AffiliateProductInput = {
   price_range: string;
   is_active: number;
   sort_order: number;
+  is_deal: number;
+  original_price: string;
 };
 
 // ── Reads ────────────────────────────────────────────────────────────────────
@@ -99,13 +103,14 @@ export async function affiliateProductCreate(data: AffiliateProductInput): Promi
       `INSERT INTO affiliate_products
         (title, description, image_url, amazon_url, asin, category, brand,
          material_type, highlights, price_range, is_active, sort_order,
-         created_at, updated_at)
-       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,NOW(),NOW())
+         is_deal, original_price, created_at, updated_at)
+       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,NOW(),NOW())
        RETURNING id`,
       [
         data.title, data.description, data.image_url, data.amazon_url,
         data.asin, data.category, data.brand, data.material_type,
         data.highlights, data.price_range, data.is_active, data.sort_order,
+        data.is_deal, data.original_price,
       ],
     );
     return Number(r.rows[0]!.id);
@@ -116,13 +121,14 @@ export async function affiliateProductCreate(data: AffiliateProductInput): Promi
       `INSERT INTO affiliate_products
         (title, description, image_url, amazon_url, asin, category, brand,
          material_type, highlights, price_range, is_active, sort_order,
-         created_at, updated_at)
-       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)`,
+         is_deal, original_price, created_at, updated_at)
+       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)`,
     )
     .run(
       data.title, data.description, data.image_url, data.amazon_url,
       data.asin, data.category, data.brand, data.material_type,
       data.highlights, data.price_range, data.is_active, data.sort_order,
+      data.is_deal, data.original_price,
     );
   return Number(result.lastInsertRowid);
 }
@@ -138,12 +144,14 @@ export async function affiliateProductUpdate(
       `UPDATE affiliate_products
        SET title=$1, description=$2, image_url=$3, amazon_url=$4, asin=$5,
            category=$6, brand=$7, material_type=$8, highlights=$9,
-           price_range=$10, is_active=$11, sort_order=$12, updated_at=NOW()
-       WHERE id = $13`,
+           price_range=$10, is_active=$11, sort_order=$12,
+           is_deal=$13, original_price=$14, updated_at=NOW()
+       WHERE id = $15`,
       [
         data.title, data.description, data.image_url, data.amazon_url,
         data.asin, data.category, data.brand, data.material_type,
         data.highlights, data.price_range, data.is_active, data.sort_order,
+        data.is_deal, data.original_price,
         id,
       ],
     );
@@ -154,12 +162,14 @@ export async function affiliateProductUpdate(
     `UPDATE affiliate_products
      SET title=?, description=?, image_url=?, amazon_url=?, asin=?,
          category=?, brand=?, material_type=?, highlights=?,
-         price_range=?, is_active=?, sort_order=?, updated_at=CURRENT_TIMESTAMP
+         price_range=?, is_active=?, sort_order=?,
+         is_deal=?, original_price=?, updated_at=CURRENT_TIMESTAMP
      WHERE id = ?`,
   ).run(
     data.title, data.description, data.image_url, data.amazon_url,
     data.asin, data.category, data.brand, data.material_type,
     data.highlights, data.price_range, data.is_active, data.sort_order,
+    data.is_deal, data.original_price,
     id,
   );
 }

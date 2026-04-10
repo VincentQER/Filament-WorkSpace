@@ -240,6 +240,17 @@ export async function ensurePostgresMigrated(): Promise<void> {
         );
       },
     },
+    {
+      version: 7,
+      async up(client) {
+        await client.query(
+          `ALTER TABLE affiliate_products ADD COLUMN IF NOT EXISTS is_deal        INTEGER NOT NULL DEFAULT 0`,
+        );
+        await client.query(
+          `ALTER TABLE affiliate_products ADD COLUMN IF NOT EXISTS original_price TEXT    NOT NULL DEFAULT ''`,
+        );
+      },
+    },
   ];
 
   for (const m of migrations) {

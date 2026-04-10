@@ -52,17 +52,19 @@ export async function POST(request: Request) {
 
   const data: AffiliateProductInput = {
     title,
-    description:   body.description?.trim()   ?? "",
-    image_url:     body.image_url?.trim()     ?? "",
+    description:    body.description?.trim()    ?? "",
+    image_url:      body.image_url?.trim()      ?? "",
     amazon_url,
-    asin:          body.asin?.trim()          ?? "",
-    category:      body.category?.trim()      ?? "essential",
-    brand:         body.brand?.trim()         ?? "",
-    material_type: body.material_type?.trim() ?? "",
-    highlights:    body.highlights?.trim()    ?? "",
-    price_range:   body.price_range?.trim()   ?? "",
-    is_active:     body.is_active === 0 ? 0 : 1,
-    sort_order:    typeof body.sort_order === "number" ? body.sort_order : 0,
+    asin:           body.asin?.trim()           ?? "",
+    category:       body.category?.trim()       ?? "essential",
+    brand:          body.brand?.trim()          ?? "",
+    material_type:  body.material_type?.trim()  ?? "",
+    highlights:     body.highlights?.trim()     ?? "",
+    price_range:    body.price_range?.trim()    ?? "",
+    original_price: body.original_price?.trim() ?? "",
+    is_active:      body.is_active === 0 ? 0 : 1,
+    is_deal:        body.is_deal === 1 ? 1 : 0,
+    sort_order:     typeof body.sort_order === "number" ? body.sort_order : 0,
   };
 
   const id = await affiliateProductCreate(data);

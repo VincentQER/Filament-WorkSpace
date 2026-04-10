@@ -275,9 +275,16 @@ export function AdminProductsTable({ initialProducts }: Props) {
 
                 {/* Main info */}
                 <div className="min-w-0 flex-1">
-                  <p className="truncate text-sm font-semibold text-zinc-100 group-hover:text-white">
-                    {p.title}
-                  </p>
+                  <div className="flex items-center gap-2">
+                    <p className="truncate text-sm font-semibold text-zinc-100 group-hover:text-white">
+                      {p.title}
+                    </p>
+                    {p.is_deal === 1 && (
+                      <span className="shrink-0 rounded-full bg-red-500/20 px-2 py-0.5 text-[10px] font-bold text-red-400">
+                        🔥 Deal
+                      </span>
+                    )}
+                  </div>
                   <div className="mt-1 flex flex-wrap items-center gap-2">
                     {p.brand && (
                       <span className="text-[11px] text-zinc-500">{p.brand}</span>

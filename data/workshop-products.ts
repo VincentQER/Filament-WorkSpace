@@ -41,6 +41,10 @@ export type WorkshopProduct = {
   category: ProductTag;
   relevantMaterials?: string[];
   badge?: string;
+  /** True when the admin has marked this as a current sale / deal price. */
+  isDeal?: boolean;
+  /** Original / before-sale price shown as strikethrough next to priceRange. */
+  originalPrice?: string;
 };
 
 export const WORKSHOP_CATEGORIES: { key: ProductTag; label: string; emoji: string }[] = [

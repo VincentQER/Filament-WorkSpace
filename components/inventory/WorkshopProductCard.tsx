@@ -96,7 +96,12 @@ export function WorkshopProductCard({ product, relevant = false }: Props) {
               Matches your inventory
             </span>
           )}
-          {product.badge && !relevant && (
+          {product.isDeal && (
+            <span className="rounded-full bg-red-500/25 px-2 py-0.5 text-[10px] font-bold text-red-400 backdrop-blur-sm ring-1 ring-red-500/20">
+              🔥 Deal
+            </span>
+          )}
+          {product.badge && !relevant && !product.isDeal && (
             <span className="rounded-full bg-amber-500/20 px-2 py-0.5 text-[10px] font-semibold text-amber-400 backdrop-blur-sm">
               {product.badge}
             </span>
@@ -128,9 +133,16 @@ export function WorkshopProductCard({ product, relevant = false }: Props) {
 
       {/* Footer */}
       <div className="flex items-center justify-between gap-3 border-t border-white/[0.06] px-4 py-3">
-        <span className="text-sm font-semibold tabular-nums text-zinc-300">
-          {product.priceRange}
-        </span>
+        <div className="flex items-baseline gap-2">
+          {product.isDeal && product.originalPrice && (
+            <span className="text-xs tabular-nums text-zinc-600 line-through">
+              {product.originalPrice}
+            </span>
+          )}
+          <span className={`text-sm font-semibold tabular-nums ${product.isDeal ? "text-red-400" : "text-zinc-300"}`}>
+            {product.priceRange}
+          </span>
+        </div>
         <span className="flex items-center gap-1 rounded-lg bg-amber-400/10 px-3 py-1.5 text-[11px] font-semibold text-amber-400 transition-colors group-hover:bg-amber-400/20">
           Check Price
           <svg viewBox="0 0 10 10" className="h-2.5 w-2.5" fill="none" stroke="currentColor" strokeWidth="1.6">

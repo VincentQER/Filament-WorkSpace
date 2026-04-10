@@ -239,6 +239,13 @@ CREATE TABLE IF NOT EXISTS schema_migrations (
         ON affiliate_products (is_active, sort_order);
     `,
     },
+    {
+      version: 7,
+      up: `
+      ALTER TABLE affiliate_products ADD COLUMN is_deal       INTEGER NOT NULL DEFAULT 0;
+      ALTER TABLE affiliate_products ADD COLUMN original_price TEXT    NOT NULL DEFAULT '';
+    `,
+    },
   ];
 
   const applied = new Set(
