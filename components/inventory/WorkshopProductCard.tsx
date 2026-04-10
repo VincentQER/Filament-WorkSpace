@@ -116,8 +116,14 @@ export function WorkshopProductCard({ product, relevant = false }: Props) {
         <p className="text-sm font-semibold leading-snug text-zinc-100 group-hover:text-white">
           {product.name}
         </p>
-        <p className="text-xs font-medium text-emerald-400/90">{product.tagline}</p>
-        <p className="text-[11px] leading-relaxed text-zinc-500">{product.whyItMatters}</p>
+        {product.tagline && (
+          <p className="border-l-2 border-emerald-500/40 pl-2.5 text-[11px] italic leading-relaxed text-zinc-400">
+            &ldquo;{product.tagline}&rdquo;
+          </p>
+        )}
+        {product.whyItMatters && (
+          <p className="text-[11px] leading-relaxed text-zinc-500">{product.whyItMatters}</p>
+        )}
       </div>
 
       {/* Footer */}
@@ -126,7 +132,7 @@ export function WorkshopProductCard({ product, relevant = false }: Props) {
           {product.priceRange}
         </span>
         <span className="flex items-center gap-1 rounded-lg bg-amber-400/10 px-3 py-1.5 text-[11px] font-semibold text-amber-400 transition-colors group-hover:bg-amber-400/20">
-          View on Amazon
+          Check Price
           <svg viewBox="0 0 10 10" className="h-2.5 w-2.5" fill="none" stroke="currentColor" strokeWidth="1.6">
             <path d="M1.5 8.5 8.5 1.5M8.5 1.5H5M8.5 1.5V5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>

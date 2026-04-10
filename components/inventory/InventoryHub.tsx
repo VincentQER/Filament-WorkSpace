@@ -156,49 +156,88 @@ export function InventoryHub() {
       </section>
 
       {/* Low-stock restock suggestions */}
-      {restockSuggestions.length > 0 && (
+      {lowStockTypes.size > 0 && (
         <section className="rounded-2xl border border-amber-500/20 bg-amber-950/20 p-5 sm:p-6">
-          <div className="flex items-start gap-3">
-            <span className="mt-0.5 text-xl" aria-hidden>⚠️</span>
-            <div>
-              <p className="text-sm font-semibold text-amber-300">Running low on filament</p>
-              <p className="mt-0.5 text-xs text-zinc-400">
-                Some of your tracked materials are nearly out. Consider restocking before your next print.
-              </p>
+          {/* Header */}
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-start gap-3">
+              <span className="mt-0.5 shrink-0 text-xl" aria-hidden>⚠️</span>
+              <div>
+                <p className="text-sm font-semibold text-amber-300">
+                  Running low on{" "}
+                  {Array.from(lowStockTypes)
+                    .slice(0, 3)
+                    .join(", ")}
+                  {lowStockTypes.size > 3 ? ` +${lowStockTypes.size - 3} more` : ""}
+                </p>
+                <p className="mt-0.5 text-xs text-zinc-400">
+                  Consider restocking before your next print job.
+                </p>
+              </div>
             </div>
+            <Link
+              href="/my-inventory/workshop"
+              className="shrink-0 rounded-xl border border-amber-500/20 px-3 py-1.5 text-[11px] font-medium text-amber-400/80 transition hover:border-amber-500/40 hover:text-amber-300"
+            >
+              See all filaments →
+            </Link>
           </div>
-          <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {restockSuggestions.map((product) => (
-              <a
-                key={product.id}
-                href={product.amazon_url}
-                target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
-                className="group flex items-center gap-3 rounded-xl border border-white/[0.07] bg-zinc-900/60 px-4 py-3 transition hover:border-amber-400/30 hover:bg-zinc-900/90"
-              >
-                {product.image && (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    width={48}
-                    height={48}
-                    className="h-12 w-12 shrink-0 rounded-lg object-contain"
-                    loading="lazy"
-                  />
-                )}
-                <div className="min-w-0 flex-1">
-                  <p className="truncate text-xs font-semibold text-zinc-200 group-hover:text-white">
-                    {product.name}
-                  </p>
-                  <p className="mt-0.5 text-[11px] text-zinc-500">{product.price}</p>
-                </div>
-                <span className="shrink-0 text-[11px] font-medium text-amber-400">
-                  Amazon →
-                </span>
-              </a>
-            ))}
-          </div>
+
+          {/* Product suggestions */}
+          {restockSuggestions.length > 0 && (
+            <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {restockSuggestions.map((product) => (
+                <a
+                  key={product.id}
+                  href={product.amazon_url}
+                  target="_blank"
+                  rel="nofollow sponsored noopener noreferrer"
+                  className="group flex items-center gap-3 rounded-xl border border-white/[0.07] bg-zinc-900/60 px-4 py-3 transition hover:border-amber-400/30 hover:bg-zinc-900/90"
+                >
+                  {product.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      width={48}
+                      height={48}
+                      className="h-12 w-12 shrink-0 rounded-lg object-contain"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-white/[0.04] text-2xl">
+                      🎨
+                    </span>
+                  )}
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-xs font-semibold text-zinc-200 group-hover:text-white">
+                      {product.name}
+                    </p>
+                    {product.price && (
+                      <p className="mt-0.5 text-[11px] tabular-nums text-zinc-500">{product.price}</p>
+                    )}
+                  </div>
+                  <span className="flex shrink-0 items-center gap-1 rounded-lg bg-amber-400/10 px-2.5 py-1 text-[11px] font-semibold text-amber-400 transition group-hover:bg-amber-400/20">
+                    Check Price
+                    <svg viewBox="0 0 10 10" className="h-2 w-2" fill="none" stroke="currentColor" strokeWidth="1.8">
+                      <path d="M1.5 8.5 8.5 1.5M8.5 1.5H5M8.5 1.5V5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              ))}
+            </div>
+          )}
+
+          {/* No matching suggestions — still show Workshop link */}
+          {restockSuggestions.length === 0 && (
+            <div className="mt-4 rounded-xl border border-white/[0.06] bg-zinc-900/40 px-4 py-3 text-xs text-zinc-500">
+              No exact match in the Workshop yet.{" "}
+              <Link href="/my-inventory/workshop" className="text-amber-400/80 underline-offset-2 hover:underline">
+                Browse all filament picks →
+              </Link>
+            </div>
+          )}
+
           <p className="mt-3 text-[10px] text-zinc-600">
             Amazon affiliate links — we earn a small commission at no extra cost to you.
           </p>
